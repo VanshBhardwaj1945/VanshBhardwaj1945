@@ -45,62 +45,70 @@
   </li>
 </ul>
 
-<h2>🛠️ Technical Skills</h2>
-<ul>
-  <li><b>Programming & Automation</b>
-    <ul>
-      <li><b>Python:</b> scripting for security tooling, automation and test scripts (building scanners, parsing PCAPs with <code>pyshark</code> / <code>scapy</code>, using <code>requests</code>, writing CLI tools)</li>
-      <li><b>PowerShell:</b> Windows automation (AD bulk user creation scripts, JWipe, File Integrity Monitor helpers)</li>
-      <li><b>Java / C++:</b> coursework & debugging for systems-level assignments</li>
-      <li><b>Shell scripting (bash):</b> Linux task automation and test harnesses</li>
-    </ul>
-  </li>
+<section>
+  <h2>🛠️ Technical Skills</h2>
 
-  <li><b>Networking & Protocols</b>
-    <ul>
-      <li>TCP/IP fundamentals, subnetting, routing, NAT, VLAN basics</li>
-      <li>Application protocols: HTTP(S), SSH, DNS, ICMP — building and testing requests with <code>curl</code></li>
-      <li>Network troubleshooting: <code>ping</code>, <code>traceroute</code>, <code>netcat</code> for connectivity checks</li>
-    </ul>
-  </li>
+  <h3>Programming & Automation</h3>
+  <ul>
+    <li><strong>Python</strong> — scripting, tooling, PCAP parsing with <code>pyshark</code>/<code>scapy</code>, <code>requests</code>, CLI tools.</li>
+    <li><strong>Java, C++</strong> — coursework and systems-level debugging.</li>
+    <li><strong>Shell / PowerShell</strong> — Linux bash automation and Windows automation (AD helpers, maintenance scripts).</li>
+  </ul>
 
-  <li><b>Security & Analysis</b>
-    <ul>
-      <li><b>Packet capture & analysis:</b> Wireshark packet inspection, PCAP triage, protocol decoding</li>
-      <li><b>Network scanning:</b> Nmap / Zenmap (port/service discovery, NSE usage for light service enumeration)</li>
-      <li>Firewall rule design & validation — pfSense (WAN/LAN/OPT interfaces), building access control matrices and verifying via packet captures</li>
-      <li>Basic pentest lab tool familiarity (Kali tooling for lab exercises)</li>
-      <li>Log review & SIEM fundamentals — structuring logs for detection, basic alerting concepts</li>
-    </ul>
-  </li>
+  <h3>Networking & Protocols</h3>
+  <ul>
+    <li>TCP/IP, subnetting, routing, NAT, VLAN basics.</li>
+    <li>Application protocols: HTTP(S), SSH, DNS, ICMP; testing with <code>curl</code>.</li>
+    <li>Troubleshooting tools: <code>ping</code>, <code>traceroute</code>, <code>netcat</code>.</li>
+  </ul>
 
-  <li><b>Cloud & Virtualization</b>
-    <ul>
-      <li>VirtualBox & VMware — building reproducible lab VMs, snapshot management, virtual networking</li>
-      <li>Azure fundamentals — provisioning VMs/storage via the portal/CLI and understanding cloud security tradeoffs</li>
-      <li>Understanding of IaC concepts and how deployments affect security posture</li>
-    </ul>
-  </li>
+  <h3>Security & Analysis</h3>
+  <ul>
+    <li>Packet capture & analysis (Wireshark), PCAP triage and protocol decoding.</li>
+    <li>Nmap / Zenmap for discovery and light service enumeration; pfSense firewall rule design and validation.</li>
+    <li>Basic pentest lab tooling (Kali) and log review / SIEM fundamentals.</li>
+  </ul>
 
-  <li><b>Testing, CI & Dev Practices</b>
-    <ul>
-      <li>Test automation with Python (pytest / unittest patterns), writing reliable, reproducible test cases</li>
-      <li>Bug triage, writing clear reproduction steps, and collaborating with engineers to prioritize fixes</li>
-      <li>Version control with Git/GitHub and basic CI concepts (build/test pipelines)</li>
-    </ul>
-  </li>
+  <h3>Cloud & Virtualization</h3>
+  <ul>
+    <li>VirtualBox / VMware — VM provisioning, snapshots, virtual networking for reproducible labs.</li>
+    <li>Azure fundamentals — provisioning VMs/storage via portal/CLI; cloud security tradeoffs.</li>
+    <li>Familiarity with IaC concepts and how deployments affect security posture.</li>
+  </ul>
 
-  <li><b>Tools & Ecosystem</b>
-    <ul>
-      <li>Ubuntu, Kali, ParrotOS<li>
-      <li>Wireshark, Nmap/Zenmap, pfSense, pyshark/scapy, curl, netcat, SSH</li>
-      <li>PowerShell, VirtualBox, VMware, Azure Portal/CLI</li>
-      <li>Familiarity with Windows and Linux administration tasks</li>
-    </ul>
-  </li>
-</ul>
+  <h3>Testing, Dev & Ops</h3>
+  <ul>
+    <li>Test automation patterns with Python (pytest/unittest), reproducible test cases.</li>
+    <li>Version control with Git &amp; GitHub; basic CI concepts and collaborative workflows.</li>
+  </ul>
 
-<p><em>Lab-specific skills from CS4371 Project-1 included above: firewall rules creation and verification (pfSense), packet capture analysis, subnet troubleshooting, Nmap/Zenmap scanning, VirtualBox lab orchestration, and documenting network policies.</em></p>
+  <h3>Tools & Platforms</h3>
+  <ul>
+    <li>OS: Windows, Linux (Ubuntu, Kali), macOS</li>
+    <li>Tools: Wireshark, Nmap/Zenmap, pfSense, pyshark/scapy, <code>curl</code>, <code>netcat</code>, SSH</li>
+    <li>Platforms: VirtualBox, VMware, Azure Portal/CLI, VDI, Microsoft Teams</li>
+  </ul>
+</section>
+
+<!-- Professional Experience -->
+<section>
+  <h2>💼 Professional Experience</h2>
+
+  <h3>Software Test Engineer (Part-time) — Diktyo Solutions LLC</h3>
+  <p><em>2023 – Present</em></p>
+  <ul>
+    <li>Collaborated with global teams (USA &amp; India) to execute software testing in an Agile environment.</li>
+    <li>Conducted security-related checks and functional testing to support product quality across platforms.</li>
+    <li>Gained experience with cross-site communication, triage, and coordinating fixes with engineers.</li>
+  </ul>
+
+  <h3>Software Trainee Intern (Cloud Platform) — Pitney Bowes</h3>
+  <p><em>Summer 2023</em></p>
+  <ul>
+    <li>Worked on cloud platform development and assisted senior engineers with troubleshooting and support tasks.</li>
+    <li>Contributed to team efforts to improve system reliability and automation workflows.</li>
+  </ul>
+</section>
 
 <h2>💼 Professional Experience</h2>
 
@@ -112,12 +120,9 @@
 
 <h2> 🤳 Connect with me:</h2>
 
-[<img align="left" alt="Vansh | GitHub" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />][github]
 [<img align="left" alt="Vansh | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Vansh | Email" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />][email]
 
 <br clear="both"/>
 
-[github]: https://github.com/shaurya
 [linkedin]: https://www.linkedin.com/in/vansh-bhardwaj-064469308
 [email]: mailto:Scorpio.vansh@gmail.com
