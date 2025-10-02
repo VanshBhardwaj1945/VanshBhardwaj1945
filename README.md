@@ -1,5 +1,4 @@
 <h1>Hi, I'm Vansh Bhardwaj! <br/>
-  <a href="https://github.com/shaurya"></a>
   <a href="https://www.linkedin.com/in/vansh-bhardwaj-064469308">Cybersecurity Professional</a>,
   <a href="mailto:Scorpio.vansh@gmail.com">Student</a>
 </h1>
