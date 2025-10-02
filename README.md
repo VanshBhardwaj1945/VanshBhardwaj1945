@@ -28,9 +28,22 @@
 
 <h2>👨‍💻 Project</h2>
 
-- <b>Project-1: Sandbox, Firewall & Access Control (CS4371 / CS5378 — Fall 2025)</b><br/>
-  - Built a VirtualBox sandbox with two subnets and configured <b>pfSense</b> as the router/firewall. Implemented and validated segmentation + policies using <b>Nmap/Zenmap</b>, <b>Wireshark</b>, <b>curl</b>, and <b>SSH</b> tests and packet captures. Designed an access-control matrix, created WAN/LAN/OPT1 rules, and documented traffic behavior before/after rule deployment.  
-  - Deliverable / Report: <a href="./docs/Project-1_Sandbox_Firewall_Access_Control_CS4371_Fall2025.pdf">Project-1: Sandbox, Firewall & Access Control (PDF)</a>
+<a href="https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378/blob/main/README.md"
+   target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+  <strong style="color:#1e90ff;">Project-1: Sandbox, Firewall &amp; Access Control (CS4371 / CS5378 — Fall 2025)</strong>
+</a>
+
+<ul>
+  <li>
+    Built a reproducible VirtualBox sandbox that models an internal company network (LAN) and an external network (OPT1), using <strong>pfSense</strong> as the router/firewall to enforce segmentation and policy.
+  </li>
+  <li>
+    Deployed four VMs (Ubuntu server, Windows XP workstation, Kali attacker, Windows 95 legacy) and implemented an Access Control Matrix translated into WAN / LAN / OPT1 rules. Where router-level controls were insufficient, host-level <code>iptables</code> was applied.
+  </li>
+  <li>
+    Validated enforcement and documented behavior with active tests and captures: <strong>Nmap / Zenmap</strong> (service discovery), <strong>Wireshark</strong> (packet captures), <strong>curl</strong>, and <strong>ssh</strong>. Captured before/after evidence demonstrates the effect of the rules.
+  </li>
+</ul>
 
 <h2>🛠️ Technical Skills</h2>
 <ul>
