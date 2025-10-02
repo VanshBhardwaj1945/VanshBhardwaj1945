@@ -109,13 +109,7 @@
   </ul>
 </section>
 
-<h2>💼 Professional Experience</h2>
 
-- <b>Software Test Engineer (Part-time)</b> — Diktyo Solutions LLC · 2023 – Present<br/>
-  I partnered with engineering teams in the US and India to build tests that caught real regressions before release. I wrote Python test scripts to automate repetitive checks, triaged flaky behaviors by collecting environment logs and PCAPs, and improved bug reports so developers could reproduce issues quickly. I also helped shape test cases around security-sensitive features and communicated findings directly during sprint demos.
-
-- <b>Software Trainee Intern (Cloud Platform)</b> — Pitney Bowes · Summer 2023<br/>
-  I supported the cloud platform team by troubleshooting staging incidents, documenting runbooks for common operational tasks, and contributing small automation that reduced manual steps during deployments. The role helped me connect low-level debugging with broader operational and security concerns in cloud environments.
 
 <h2> 🤳 Connect with me:</h2>
 
