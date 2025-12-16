@@ -3,17 +3,19 @@
   <a href="mailto:Scorpio.vansh@gmail.com">Student</a>
 </h1>
 
-<p>📍 Austin, TX · 📧 <a href="mailto:Scorpio.vansh@gmail.com">Scorpio.vansh@gmail.com</a> · 📱 <a href="tel:+15124609515">512-460-9515</a></p>
+<p>📍 Austin, TX   ·   📧 <a href="mailto:Scorpio.vansh@gmail.com">Scorpio.vansh@gmail.com</a>   ·   📱 <a href="tel:+15124609515">512-460-9515</a>   ·   🔗 <a href="[https://www.linkedin.com/in/vansh-](https://www.linkedin.com/in/vanshbhardwaj1945)bhardwaj-064469308">LinkedIn</a></p>
 
 <h2>🎯 Objective</h2>
-<p>Motivated and detail-oriented junior Computer Science major (Cybersecurity concentration) at Texas State University with hands-on experience in network monitoring, vulnerability assessment, and incident response. Skilled in Python scripting, packet analysis, firewall configuration, and virtual lab environments. Seeking an internship as a SOC Analyst or Security Analyst to apply practical security tools, detect and respond to threats, and contribute to organizational security operations..</p>
+<p>Motivated and detail-oriented junior Computer Science major (Cybersecurity concentration) at Texas State University with hands-on experience in network monitoring, firewall configuration, SIEM monitoring, and controlled attack research. Skilled in Python scripting, packet analysis, and virtual lab environments. Seeking an internship as a SOC Analyst or Security Analyst to apply practical security tools, detect and respond to threats, and contribute to organizational security operations.</p>
 
 <h2>🎓 Education</h2>
+<ul>
   <li>Texas State University</li>
   <li>B.S. Computer Science (Cybersecurity Concentration)</li>
   <li>Minor in Business Administration</li>
   <li>Expected Graduation: <b>2027</b></li>
   <li>Major GPA: <b>3.0</b></li>
+</ul>
 
 <h2>📜 Certifications</h2>
 <ul>
@@ -25,23 +27,25 @@
   <li>CompTIA Security+ — In Progress</li>
 </ul>
 
-<h2>👨‍💻 Project</h2>
+<h2>👨‍💻 Projects</h2>
 
-<a href="https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378/blob/main/README.md"
-   target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+<a href="https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378/blob/main/README.md" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
   <strong style="color:#1e90ff;">Project-1: Sandbox, Firewall &amp; Access Control (CS4371 / CS5378 — Fall 2025)</strong>
 </a>
-
 <ul>
-  <li>
-    Built a reproducible VirtualBox sandbox that models an internal company network (LAN) and an external network (OPT1), using <strong>pfSense</strong> as the router/firewall to enforce segmentation and policy.
-  </li>
-  <li>
-    Deployed four VMs (Ubuntu server, Windows XP workstation, Kali attacker, Windows 95 legacy) and implemented an Access Control Matrix translated into WAN / LAN / OPT1 rules. Where router-level controls were insufficient, host-level <code>iptables</code> was applied.
-  </li>
-  <li>
-    Validated enforcement and documented behavior with active tests and captures: <strong>Nmap / Zenmap</strong> (service discovery), <strong>Wireshark</strong> (packet captures), <strong>curl</strong>, and <strong>ssh</strong>. Captured before/after evidence demonstrates the effect of the rules.
-  </li>
+  <li>Built a reproducible VirtualBox sandbox modeling an internal company network (LAN) and external network (OPT1) using <strong>pfSense</strong> as the router/firewall to enforce segmentation and policy.</li>
+  <li>Deployed four VMs (Ubuntu server, Windows XP workstation, Kali attacker, Windows 95 legacy) and implemented an Access Control Matrix into WAN / LAN / OPT1 rules. Host-level <code>iptables</code> enforced policies where router rules were insufficient.</li>
+  <li>Validated enforcement and documented behavior using active tests and captures: discovery (<strong>Nmap/Zenmap</strong>), <strong>Wireshark</strong>, <strong>curl</strong>, and <strong>ssh</strong>. Captured before/after evidence demonstrates rule effectiveness.</li>
+</ul>
+
+<a href="https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+  <strong style="color:#1e90ff;">Project-2: Slowloris Application-Layer DoS — Targeted Research Lab (Dec 2025)</strong>
+</a>
+<ul>
+  <li>Executed a controlled Slowloris application-layer DoS against an Apache web server in an isolated VirtualBox lab and detected it using <strong>Splunk</strong>, server logs, and live testing.</li>
+  <li>Configured Splunk to ingest Apache access and error logs; correlated alerts with application unavailability.</li>
+  <li>Applied reconnaissance and discovery using <strong>Nmap/Zenmap</strong> and validated attack mechanics while documenting mitigation strategies.</li>
+  <li>Demonstrates both offensive execution and defensive monitoring in a realistic SOC-style lab.</li>
 </ul>
 
 <section>
@@ -49,73 +53,60 @@
 
   <h3>Programming & Automation</h3>
   <ul>
-    <li><strong>Python</strong> — scripting, tooling, PCAP parsing with <code>pyshark</code>/<code>scapy</code>, <code>requests</code>, CLI tools.</li>
-    <li><strong>Java, C++</strong> — coursework and systems-level debugging.</li>
-    <li><strong>Shell / PowerShell</strong> — Linux bash automation and Windows automation (AD helpers, maintenance scripts).</li>
+    <li><strong>Python</strong> — scripting, tooling, PCAP parsing (pyshark/scapy), API requests</li>
+    <li>C/C++</li>
+    <li>Java</li>
+    <li><strong>Bash / PowerShell</strong> — Linux and Windows automation</li>
   </ul>
 
   <h3>Networking & Protocols</h3>
   <ul>
-    <li>TCP/IP, subnetting, routing, NAT, VLAN basics.</li>
-    <li>Application protocols: HTTP(S), SSH, DNS, ICMP; testing with <code>curl</code>.</li>
-    <li>Troubleshooting tools: <code>ping</code>, <code>traceroute</code>, <code>netcat</code>.</li>
+    <li>TCP/IP, subnetting, routing, NAT, VLAN basics</li>
+    <li>HTTP(S), SSH, DNS, ICMP</li>
+    <li>ping, traceroute, netcat</li>
   </ul>
 
   <h3>Security & Analysis</h3>
   <ul>
-    <li>Packet capture & analysis (Wireshark), PCAP triage and protocol decoding.</li>
-    <li>Nmap / Zenmap for discovery and light service enumeration; pfSense firewall rule design and validation.</li>
-    <li>Basic pentest lab tooling (Kali) and log review / SIEM fundamentals.</li>
+    <li><strong>Packet analysis</strong> (Wireshark, tcpdump)</li>
+    <li><strong>Discovery</strong> (Nmap/Zenmap)</li>
+    <li><strong>Firewall management</strong> (pfSense, iptables)</li>
+    <li><strong>SIEM & log analysis</strong> (Splunk)</li>
+    <li><strong>Offensive testing</strong> (Kali Linux, Slowloris — lab only)</li>
   </ul>
 
-  <h3>Cloud & Virtualization</h3>
+  <h3>Systems & Virtualization</h3>
   <ul>
-    <li>VirtualBox / VMware — VM provisioning, snapshots, virtual networking for reproducible labs.</li>
-    <li>Azure fundamentals — provisioning VMs/storage via portal/CLI; cloud security tradeoffs.</li>
-    <li>Familiarity with IaC concepts and how deployments affect security posture.</li>
-  </ul>
-
-  <h3>Testing, Dev & Ops</h3>
-  <ul>
-    <li>Test automation patterns with Python (pytest/unittest), reproducible test cases.</li>
-    <li>Version control with Git &amp; GitHub; basic CI concepts and collaborative workflows.</li>
-  </ul>
-
-  <h3>Tools & Platforms</h3>
-  <ul>
-    <li>OS: Windows, Linux (Ubuntu, Kali), macOS</li>
-    <li>Tools: Wireshark, Nmap/Zenmap, pfSense, pyshark/scapy, <code>curl</code>, <code>netcat</code>, SSH</li>
-    <li>Platforms: VirtualBox, VMware, Azure Portal/CLI, VDI, Microsoft Teams</li>
+    <li><strong>Linux</strong> (Ubuntu, Kali)</li>
+    <li><strong>Windows</strong></li>
+    <li><strong>Mac</strong></li>
+    <li><strong>VirtualBox</strong></li>
+    <li><strong>VMware</strong></li>
   </ul>
 </section>
 
-<!-- Professional Experience -->
 <section>
   <h2>💼 Professional Experience</h2>
 
   <h3>Software Test Engineer (Part-time) — Diktyo Solutions LLC</h3>
   <p><em>2023 – Present</em></p>
   <ul>
-    <li>Collaborated with global teams (USA &amp; India) to execute software testing in an Agile environment.</li>
-    <li>Conducted security-related checks and functional testing to support product quality across platforms.</li>
-    <li>Gained experience with cross-site communication, triage, and coordinating fixes with engineers.</li>
+    <li>Collaborated with global teams to execute software testing in Agile environments.</li>
+    <li>Performed security-related checks and functional testing to ensure system reliability and data integrity.</li>
+    <li>Coordinated fixes with engineers based on triage, testing results, and risk assessment.</li>
+    <li>Documented testing outcomes to improve repeatability and support quality audits.</li>
   </ul>
 
   <h3>Software Trainee Intern (Cloud Platform) — Pitney Bowes</h3>
   <p><em>Summer 2023</em></p>
   <ul>
-    <li>Worked on cloud platform development and assisted senior engineers with troubleshooting and support tasks.</li>
-    <li>Contributed to team efforts to improve system reliability and automation workflows.</li>
+    <li>Assisted senior engineers with cloud platform troubleshooting, automation workflows, and system monitoring.</li>
+    <li>Supported process improvements to enhance security and operational efficiency in cloud deployments.</li>
   </ul>
 </section>
-
-
-
 <h2> 🤳 Connect with me:</h2>
-
-[<img align="left" alt="Vansh | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-
-<br clear="both"/>
-
-[linkedin]: https://www.linkedin.com/in/vansh-bhardwaj-064469308
-[email]: mailto:Scorpio.vansh@gmail.com
+<ul>
+  <li>Email: <a href="mailto:Scorpio.vansh@gmail.com">Scorpio.vansh@gmail.com</a></li>
+  <li>Phone: 512-460-9515</li>
+  <li>LinkedIn: <a href="https://www.linkedin.com/in/vanshbhardwaj1945/">linkedin.com/in/vanshbhardwaj1945</a></li>
+</ul>
