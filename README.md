@@ -1,120 +1,87 @@
-<h1>Hi, I'm Vansh Bhardwaj! <br/>
-  <a href="https://www.linkedin.com/in/vansh-bhardwaj-064469308">Cybersecurity Professional</a>,
-  <a href="mailto:Scorpio.vansh@gmail.com">Student</a>
-</h1>
+# Vansh Bhardwaj  
+Cloud Security | DevSecOps | Cloud Infrastructure Engineering | DevOps
 
-<p>📍 Austin, TX   ·   📧 <a href="mailto:Scorpio.vansh@gmail.com">Scorpio.vansh@gmail.com</a>   ·   📱 <a href="tel:+15124609515">512-460-9515</a>   ·   🔗 <a href="[https://www.linkedin.com/in/vansh-](https://www.linkedin.com/in/vanshbhardwaj1945)bhardwaj-064469308">LinkedIn</a></p>
+Austin, Texas· Email: <Scorpio.vansh@gmail.com> · LinkedIn: <https://www.linkedin.com/in/vanshbhardwaj1945/>
 
-<h2>🎯 About Me</h2>
+## About Me
 
+My journey into technology started with curiosity — breaking things in labs, rebuilding them correctly, and wanting to understand how systems actually work under the hood. What began as learning networking and security fundamentals evolved into building full cloud-based systems and then asking the harder question: how do you design them securely from the start?
 
-<li>I’m seeking opportunities to apply hands-on security skills, build defenses, and contribute to real-world incident detection and response. </li> 
-<li>I’m currently strengthening core cybersecurity fundamentals and creating new lab and research projects. </li>
-<li>Ask me about network defense, application-layer attacks, SIEM monitoring, or my experience in security labs and internships.</li>
-<li>Fun Fact: I've ate 50 wings in one sitting </li>
-</ul>
+I enjoy building infrastructure from the ground up — deploying it, automating it, monitoring it, and stress-testing it to see where it fails. Whether it’s a cloud-hosted application, a detection lab, or a CI/CD pipeline, I like understanding every layer involved.
 
+Over time, I’ve become especially interested in the intersection of infrastructure, automation, and security — where engineering decisions directly impact reliability, resilience, and risk.
 
+Right now, I’m focused on deepening my knowledge of cloud platforms, infrastructure-as-code, system hardening, and detection-driven engineering while continuing to build hands-on, production-style projects.
 
-<h2>📜 Certifications</h2>
-<ul>
-  <li>
-    <a href="https://coursera.org/share/9e2a452eda8582130d297ea13fef837b" target="_blank">
-      Google Cybersecurity Certificate — Completed
-    </a>
-  </li>
-  <li>CompTIA Security+ — In Progress</li>
-</ul>
+**Core focus areas:**
+- Cloud security and secure cloud infrastructure
+- DevSecOps: automation, CI/CD, and test-gated deployments
+- Detection engineering and log-driven incident validation
+- Infrastructure automation and reproducible lab environments
 
-<h2>👨‍💻 Projects</h2>
+## Projects
 
-<a href="https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378/blob/main/README.md" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
-  <strong style="color:#1e90ff;">Project-1: Sandbox, Firewall &amp; Access Control (CS4371 / CS5378 — Fall 2025)</strong>
-</a>
-<ul>
-  <li>Built a reproducible VirtualBox sandbox modeling an internal company network (LAN) and external network (OPT1) using <strong>pfSense</strong> as the router/firewall to enforce segmentation and policy.</li>
-  <li>Deployed four VMs (Ubuntu server, Windows XP workstation, Kali attacker, Windows 95 legacy) and implemented an Access Control Matrix into WAN / LAN / OPT1 rules. Host-level <code>iptables</code> enforced policies where router rules were insufficient.</li>
-  <li>Validated enforcement and documented behavior using active tests and captures: discovery (<strong>Nmap/Zenmap</strong>), <strong>Wireshark</strong>, <strong>curl</strong>, and <strong>ssh</strong>. Captured before/after evidence demonstrates rule effectiveness.</li>
-</ul>
+| Project | What I Built | Security + Cloud Impact | Technologies |
+|---|---|---|---|
+| **[Cloud-Native Resume Platform (Featured)](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | - Designed and deployed a serverless cloud application using Azure services<br>- Implemented frontend → API → database architecture using Azure Functions and Cosmos DB<br>- Automated deployments using CI/CD pipelines | - Reduced deployment risk using test-gated automation<br>- Secured backend data access through API layer separation<br>- Implemented DNS security and HTTPS edge routing | Azure Storage, Azure Front Door, Azure Functions (Python), Cosmos DB, GitHub Actions, Cloudflare DNS |
+| **[Application-Layer DoS Detection Lab (Slowloris)](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | - Executed controlled application-layer DoS testing in isolated sandbox environment<br>- Configured SIEM monitoring and log ingestion for detection validation<br>- Performed network and host telemetry analysis | - Demonstrated detection engineering for low-bandwidth application attacks<br>- Validated service availability under resource exhaustion scenarios | Splunk SIEM, Apache HTTP Server, Kali Linux, Wireshark, Nmap |
+| **[Network Segmentation & Firewall Policy Lab](https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378)** | - Designed multi-subnet virtual enterprise network topology<br>- Implemented router and host-level security policies | - Enforced least-privilege network communication controls<br>- Validated defense-in-depth architecture using scanning and packet capture analysis | VirtualBox, pfSense, Linux, Windows VMs, iptables, Wireshark, Nmap |
 
-<a href="https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
-  <strong style="color:#1e90ff;">Project-2: Slowloris Application-Layer DoS — Targeted Research Lab (Dec 2025)</strong>
-</a>
-<ul>
-  <li>Executed a controlled Slowloris application-layer DoS against an Apache web server in an isolated VirtualBox lab and detected it using <strong>Splunk</strong>, server logs, and live testing.</li>
-  <li>Configured Splunk to ingest Apache access and error logs; correlated alerts with application unavailability.</li>
-  <li>Applied reconnaissance and discovery using <strong>Nmap/Zenmap</strong> and validated attack mechanics while documenting mitigation strategies.</li>
-  <li>Demonstrates both offensive execution and defensive monitoring in a realistic SOC-style lab.</li>
-</ul>
+## Tech Stack
 
-<h2>🎓 Education</h2>
-<ul>
-  <li>Texas State University</li>
-  <li>B.S. Computer Science (Cybersecurity Concentration)</li>
-  <li>Minor in Business Administration</li>
-  <li>Expected Graduation: <b>2027</b></li>
-  <li>Major GPA: <b>3.0</b></li>
-</ul>
+| Tool / Technology | Purpose |
+|-------------------|---------|
+| Azure Portal | Cloud platform for hosting, management, and RBAC |
+| Azure Storage (Static Website) | Host static frontend files with blob-backed static hosting |
+| Azure Front Door (AFD) | Global routing, CDN-like edge delivery, HTTPS termination |
+| Azure Functions (Python) | Serverless API layer for secure backend logic |
+| Azure Cosmos DB (serverless) | Low-latency document store for visitor counts and small state |
+| GitHub & GitHub Actions (CI/CD) | Source control, automated pipelines for frontend and backend deployments |
+| Service Principals / Azure RBAC | Secure GitHub-to-Azure authentication and least-privilege access |
+| Cloudflare | DNS management, DNSSEC, and authoritative domain control |
+| AFD Managed SSL Certificate | HTTPS termination and certificate management at the edge |
+| Python | Backend logic, automation, testing (Azure Functions) |
+| pytest | Unit testing and test gating for backend CI |
+| Docker | Local reproducible environments and packaging (used in internships/projects) |
+| HTML / CSS / JavaScript | Frontend static site and API integration |
+| Azure Functions Core Tools / Azure CLI | Local development, testing, and scripted deployments |
+| curl / browser devtools | Manual API and connectivity testing |
+| Splunk | Log ingestion and alert correlation (detection & monitoring) |
+| Wireshark / tcpdump | Packet captures and network analysis |
+| Nmap / Zenmap | Discovery and enumeration for lab validation |
+| pfSense / iptables | Firewall policy engineering and host-level enforcement |
+| VirtualBox / VMware | Local lab virtualization for reproducible testing environments |
 
-<section>
-  <h2>🛠️ Technical Skills</h2>
+## Certifications
 
-  <h3>Programming & Automation</h3>
-  <ul>
-    <li><strong>Python</strong> — scripting, tooling, PCAP parsing (pyshark/scapy), API requests</li>
-    <li>C/C++</li>
-    <li>Java</li>
-    <li><strong>Bash / PowerShell</strong> — Linux and Windows automation</li>
-  </ul>
+- **Microsoft Certified: Azure Fundamentals (AZ-900)**  
+- **CompTIA Security+ (SY0-701)**  
+- **Google Cybersecurity Professional Certificate**
 
-  <h3>Networking & Protocols</h3>
-  <ul>
-    <li>TCP/IP, subnetting, routing, NAT, VLAN basics</li>
-    <li>HTTP(S), SSH, DNS, ICMP</li>
-    <li>ping, traceroute, netcat</li>
-  </ul>
+---
 
-  <h3>Security & Analysis</h3>
-  <ul>
-    <li><strong>Packet analysis</strong> (Wireshark, tcpdump)</li>
-    <li><strong>Discovery</strong> (Nmap/Zenmap)</li>
-    <li><strong>Firewall management</strong> (pfSense, iptables)</li>
-    <li><strong>SIEM & log analysis</strong> (Splunk)</li>
-    <li><strong>Offensive testing</strong> (Kali Linux, Slowloris — lab only)</li>
-  </ul>
+## Education
 
-  <h3>Systems & Virtualization</h3>
-  <ul>
-    <li><strong>Linux</strong> (Ubuntu, Kali)</li>
-    <li><strong>Windows</strong></li>
-    <li><strong>Mac</strong></li>
-    <li><strong>VirtualBox</strong></li>
-    <li><strong>VMware</strong></li>
-  </ul>
-</section>
+**Texas State University**  
+B.S. Computer Science — Cybersecurity Concentration  
+Minor in Business Administration  
 
-<section>
-  <h2>💼 Professional Experience</h2>
+Expected Graduation: May, 2027  
+Major GPA: 3.0
 
-  <h3>Software Test Engineer (Part-time) — Diktyo Solutions LLC</h3>
-  <p><em>2023 – 2025, 2025</em></p>
-  <ul>
-    <li>Collaborated with global teams to execute software testing in Agile environments.</li>
-    <li>Performed security-related checks and functional testing to ensure system reliability and data integrity.</li>
-    <li>Coordinated fixes with engineers based on triage, testing results, and risk assessment.</li>
-    <li>Documented testing outcomes to improve repeatability and support quality audits.</li>
-  </ul>
+--- 
 
-  <h3>Software Engineer Intern (Cloud Platform) — Pitney Bowes</h3>
-  <p><em>Summer 2023</em></p>
-  <ul>
-    <li>Assisted senior engineers with cloud platform troubleshooting, automation workflows, and system monitoring.</li>
-    <li>Supported process improvements to enhance security and operational efficiency in cloud deployments.</li>
-  </ul>
-</section>
-<h2> 🤳 Connect with me:</h2>
-<ul>
-  <li>Email: <a href="mailto:Scorpio.vansh@gmail.com">Scorpio.vansh@gmail.com</a></li>
-  <li>Phone: 512-460-9515</li>
-  <li>LinkedIn: <a href="https://www.linkedin.com/in/vanshbhardwaj1945/">linkedin.com/in/vanshbhardwaj1945</a></li>
-</ul>
+## Experience
+
+### Software Engineer Intern (Cloud Platform) — Pitney Bowes  
+**Summer 2023**
+
+- Collaborated with Cloud and AI engineering teams to support development of secure and scalable software solutions for shipping and mailing platforms.  
+- Supported development and testing of cloud-based applications on Microsoft Azure, focusing on system scalability, reliability, and security.  
+- Assisted in building and validating cloud workflows, APIs, and backend services deployed in Azure environments.  
+- Configured and worked within Virtual Desktop Infrastructure (VDI) environments using Citrix Workspace to maintain secure remote development access.  
+- Participated in Agile workflows including stand-ups, sprint planning, and code reviews to support secure software development practices.  
+- Used Microsoft Teams, Jupyter Notebook, and Azure tools to improve team collaboration, documentation, and testing workflows.
+
+  
+<
