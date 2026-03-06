@@ -20,12 +20,12 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 - Infrastructure automation and reproducible lab environments
 
 
-## Projects
+## Projects & Labs
 
 | Project | What I Built | Security + Cloud Impact | Technologies |
 |---|---|---|---|
 | **[Cloud-Native Resume Platform (Featured)](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | - Designed and deployed a serverless cloud resume application on Microsoft Azure<br>- Implemented full-stack architecture using frontend → serverless API → database separation<br>- Built and automated CI/CD deployment pipelines with testing validation | - Reduced production deployment risk using automated CI/CD workflows<br>- Secured backend data access using API abstraction and identity separation<br>- Improved availability using CDN-style edge routing and HTTPS security | Microsoft Azure (Storage, Front Door, Functions, Cosmos DB), GitHub, GitHub Actions Workflows, Python, pytest, HTML, CSS, JavaScript, Cloudflare DNS, Azure CLI, Azure Portal, Docker (local environments), Git version control |
-| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | - Hands-on labs completed while studying for AZ-900 and AZ-104<br>- Covers RBAC, Management Groups, identity access control, and more<br>- Each lab documented with full configuration details and validated outcomes | - Demonstrates practical Azure administration and security enforcement<br>- Validated least-privilege access controls through real permission testing<br>- Applied enterprise-scale governance patterns using management group hierarchy | Microsoft Azure, Microsoft Entra ID, Azure PowerShell, Azure Portal, IAM |
+| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | - Hands-on labs completed while studying for AZ-900 and AZ-104<br>- Covers RBAC, Management Groups, Azure Policy, tag enforcement, tag inheritance, and resource locks<br>- Each lab executed via Azure Cloud Shell and documented with full configuration details and validated outcomes | - Demonstrates practical Azure administration and security enforcement<br>- Validated least-privilege access controls through real permission testing<br>- Enforced governance compliance using Azure Policy and resource lock protection | Microsoft Azure, Microsoft Entra ID, Azure Policy, Azure PowerShell, Azure Cloud Shell, Azure Portal, IAM |
 | **[Application-Layer DoS Detection Lab (Slowloris)](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | - Executed controlled Slowloris testing in an isolated sandbox<br>- Built SIEM ingestion and detection queries for Apache logs<br>- Performed packet- and host-level telemetry analysis | - Demonstrated detection engineering for low-bandwidth app-layer attacks<br>- Validated failure modes not visible to network-volume monitoring | Splunk, Apache, Wireshark, Nmap, Kali |
 | **[Network Segmentation & Firewall Policy Lab](https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378)** | - Designed multi-subnet virtualization topology and routing policies<br>- Implemented router (pfSense) and host (iptables) controls | - Enforced least-privilege communication rules to reduce lateral movement risk<br>- Verified enforcement with active scanning and packet captures | VirtualBox, pfSense, iptables, Nmap, Wireshark |
 
@@ -40,7 +40,8 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | Microsoft Entra ID | Identity management, RBAC, and access control |
 | Azure Management Groups | Subscription-level governance and policy inheritance |
 | Azure IAM / RBAC | Role-based access control and least-privilege enforcement |
-| Azure PowerShell | Infrastructure scripting and permission validation |
+| Azure Policy | Governance enforcement, tag compliance, and resource remediation |
+| Azure PowerShell / Cloud Shell | Infrastructure scripting, permission validation, and CLI-driven administration |
 | GitHub & GitHub Actions | Version control and CI/CD pipeline automation |
 | Cloudflare | DNS management, DNSSEC, and domain security |
 | Docker | Local reproducible development and deployment environments |
