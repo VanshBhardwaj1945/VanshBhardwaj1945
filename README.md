@@ -11,7 +11,7 @@ Cloud Security · DevSecOps · Cloud Infrastructure
 
 My journey began with curiosity — breaking lab setups, rebuilding them correctly, and learning how systems behave under stress. That curiosity led me from networking and core security fundamentals into building cloud-hosted systems and asking how to design them securely from day one.
 
-I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stress-test until it’s reliable and observable. I focus on automation, test-gated deployments, and telemetry-driven validation so systems remain resilient as they scale.
+I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stress-test until it's reliable and observable. I focus on automation, test-gated deployments, and telemetry-driven validation so systems remain resilient as they scale.
 
 **Core focus areas**
 - Cloud security and secure cloud infrastructure  
@@ -25,6 +25,7 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | Project | What I Built | Security + Cloud Impact | Technologies |
 |---|---|---|---|
 | **[Cloud-Native Resume Platform (Featured)](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | - Designed and deployed a serverless cloud resume application on Microsoft Azure<br>- Implemented full-stack architecture using frontend → serverless API → database separation<br>- Built and automated CI/CD deployment pipelines with testing validation | - Reduced production deployment risk using automated CI/CD workflows<br>- Secured backend data access using API abstraction and identity separation<br>- Improved availability using CDN-style edge routing and HTTPS security | Microsoft Azure (Storage, Front Door, Functions, Cosmos DB), GitHub, GitHub Actions Workflows, Python, pytest, HTML, CSS, JavaScript, Cloudflare DNS, Azure CLI, Azure Portal, Docker (local environments), Git version control |
+| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | - Hands-on labs completed while studying for AZ-900 and AZ-104<br>- Covers RBAC, Management Groups, identity access control, and more<br>- Each lab documented with full configuration details and validated outcomes | - Demonstrates practical Azure administration and security enforcement<br>- Validated least-privilege access controls through real permission testing<br>- Applied enterprise-scale governance patterns using management group hierarchy | Microsoft Azure, Microsoft Entra ID, Azure PowerShell, Azure Portal, IAM |
 | **[Application-Layer DoS Detection Lab (Slowloris)](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | - Executed controlled Slowloris testing in an isolated sandbox<br>- Built SIEM ingestion and detection queries for Apache logs<br>- Performed packet- and host-level telemetry analysis | - Demonstrated detection engineering for low-bandwidth app-layer attacks<br>- Validated failure modes not visible to network-volume monitoring | Splunk, Apache, Wireshark, Nmap, Kali |
 | **[Network Segmentation & Firewall Policy Lab](https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378)** | - Designed multi-subnet virtualization topology and routing policies<br>- Implemented router (pfSense) and host (iptables) controls | - Enforced least-privilege communication rules to reduce lateral movement risk<br>- Verified enforcement with active scanning and packet captures | VirtualBox, pfSense, iptables, Nmap, Wireshark |
 
@@ -36,6 +37,10 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | Azure Portal, Azure Storage, Azure Front Door | Cloud hosting, global routing, and infrastructure management |
 | Azure Functions (Python) | Serverless backend API development |
 | Azure Cosmos DB | Low-latency document database storage |
+| Microsoft Entra ID | Identity management, RBAC, and access control |
+| Azure Management Groups | Subscription-level governance and policy inheritance |
+| Azure IAM / RBAC | Role-based access control and least-privilege enforcement |
+| Azure PowerShell | Infrastructure scripting and permission validation |
 | GitHub & GitHub Actions | Version control and CI/CD pipeline automation |
 | Cloudflare | DNS management, DNSSEC, and domain security |
 | Docker | Local reproducible development and deployment environments |
@@ -77,4 +82,3 @@ Minor in Business Administration
 
 Expected Graduation: May 2027  
 Major GPA: 3.0
-
