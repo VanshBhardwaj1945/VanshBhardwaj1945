@@ -32,39 +32,23 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 
 ## Tech Stack
 
-| Tool / Technology | Purpose |
-|-------------------|---------|
-| OWASP | Aid with hardening of a live production site |
-| Azure Portal, Azure Storage, Azure Front Door | Cloud hosting, global routing, and infrastructure management |
-| Azure Functions (Python) | Serverless backend API development |
-| Azure Cosmos DB | Low-latency document database storage |
-| Microsoft Entra ID | Identity management, RBAC, and access control |
-| Azure Management Groups | Subscription-level governance and policy inheritance |
-| Azure IAM / RBAC | Role-based access control and least-privilege enforcement |
-| Azure Policy | Governance enforcement, tag compliance, and resource remediation |
-| Azure Virtual Machines | VM deployment, resizing, disk management, and lifecycle operations |
-| Azure VM Scale Sets (VMSS) | Scalable VM fleet orchestration with autoscaling and load balancing |
-| Azure Load Balancer / NSG | Traffic distribution, inbound NAT rules, and network access control |
-| Windows Sysprep | VM generalization and custom image preparation |
-| ARM Templates (JSON) | Declarative Infrastructure-as-Code for repeatable Azure resource deployments |
-| Azure Bicep | Concise IaC language that compiles to ARM, with typed parameters and decorators |
-| Terraform | Infrastructure-as-Code for Cloudflare security configuration management |
-| Cloudflare (WAF, Access, Workers, Bot Protection) | Edge security — WAF rules, Zero Trust access, security headers, bot mitigation |
-| Cloudflare Workers | Edge compute for injecting HTTP security headers on every response |
-| Azure PowerShell / Cloud Shell | Infrastructure scripting, permission validation, and CLI-driven administration |
-| GitHub & GitHub Actions | Version control and CI/CD pipeline automation |
-| Docker | Local reproducible development and deployment environments |
-| Python | Backend logic, automation scripting, and security tooling |
-| pytest | Unit testing and CI pipeline validation |
-| HTML / CSS / JavaScript | Frontend development and API integration |
-| C++ | Systems programming and academic coursework |
-| Java | Object-oriented programming fundamentals |
-| Splunk | SIEM logging, detection engineering, and telemetry analysis |
-| Wireshark / tcpdump | Network packet analysis and forensics |
-| Nmap / Zenmap | Network discovery and reconnaissance |
-| pfSense / iptables | Firewall policy engineering and host-level security |
-| VirtualBox / VMware | Virtualized lab and security testing environments |
+## Tech Stack
 
+| Domain | Technologies |
+|--------|--------------|
+| **Cloud Platform** | Microsoft Azure (Portal, Storage, Front Door, Functions, Cosmos DB) |
+| **Identity & Governance** | Microsoft Entra ID, RBAC, Azure Policy, Management Groups |
+| **Compute & Networking** | Azure VMs, VM Scale Sets, Load Balancer, NSG |
+| **Infrastructure as Code** | Terraform, ARM Templates (JSON), Bicep |
+| **Edge & Web Security** | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), HTTP Security Headers |
+| **DevOps & CI/CD** | GitHub, GitHub Actions, Azure CLI, Azure PowerShell, Docker |
+| **Detection & SIEM** | Splunk |
+| **Network Analysis & Recon** | Wireshark, tcpdump, Nmap, Zenmap |
+| **Firewall & Segmentation** | pfSense, iptables |
+| **Virtualization & Imaging** | VirtualBox, VMware, Windows Sysprep |
+| **Programming and Scripting** | Python, Powershell/Bash JavaScript, C++, Java |
+| **Frontend & Testing** | HTML, CSS, pytest |
+| **Security Frameworks** | OWASP Top 10 |
 
 ## Experience
 
