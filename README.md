@@ -1,5 +1,5 @@
 # Vansh Bhardwaj  
-Cloud Security · DevSecOps · Cloud Infrastructure
+Cloud Security · DevSecOps · Cloud Infrastructure · Security Engineering · DevOps  
 
 📍 Austin, Texas  
 📧 Email: Scorpio.vansh@gmail.com  
@@ -25,6 +25,7 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | Project | What I Built | Security + Cloud Impact | Technologies |
 |---|---|---|---|
 | **[Cloud-Native Resume Platform (Featured)](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | - Designed and deployed a serverless cloud resume application on Microsoft Azure<br>- Implemented full-stack architecture using frontend → serverless API → database separation<br>- Built and automated CI/CD deployment pipelines with testing validation | - Reduced production deployment risk using automated CI/CD workflows<br>- Secured backend data access using API abstraction and identity separation<br>- Improved availability using CDN-style edge routing and HTTPS security | Microsoft Azure (Storage, Front Door, Functions, Cosmos DB), GitHub, GitHub Actions Workflows, Python, pytest, HTML, CSS, JavaScript, Cloudflare DNS, Azure CLI, Azure Portal, Docker (local environments), Git version control |
+| **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)** | - Hardened a live production Azure-hosted site using Cloudflare's security platform across 6 phases<br>- Built custom WAF rules blocking SQLi, XSS, path traversal, and known attack scanners<br>- Deployed Zero Trust Access (email OTP) on a protected resource, a security headers Worker, bot protection, and rate limiting on the API endpoint<br>- Managed all configuration as Terraform IaC | - Blocked real AWS bot traffic and unexpected POST probing observed in live analytics<br>- Enforced Zero Trust identity verification at the network edge, independent of the origin<br>- Eliminated entire attack classes (SQLi, XSS, Magecart) before requests reach Azure infrastructure<br>- All security rules version-controlled, auditable, and reproducible via Terraform | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), Terraform, JavaScript, Azure (Storage, Front Door, Functions, Cosmos DB) |
 | **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | Hands-on AZ-900 and AZ-104 labs covering RBAC, Azure Policy, VM management, VMSS, and IaC via ARM Templates and Bicep | Validates governance, least-privilege access, and repeatable infrastructure deployment across multiple toolchains | Microsoft Azure, Microsoft Entra ID, Azure Policy, Azure Virtual Machines, Azure VMSS, ARM Templates, Bicep, Azure PowerShell, Azure CLI, Azure Cloud Shell, Azure Portal, Load Balancer, NSG, IAM |
 | **[Application-Layer DoS Detection Lab (Slowloris)](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | - Executed controlled Slowloris testing in an isolated sandbox<br>- Built SIEM ingestion and detection queries for Apache logs<br>- Performed packet- and host-level telemetry analysis | - Demonstrated detection engineering for low-bandwidth app-layer attacks<br>- Validated failure modes not visible to network-volume monitoring | Splunk, Apache, Wireshark, Nmap, Kali |
 | **[Network Segmentation & Firewall Policy Lab](https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378)** | - Designed multi-subnet virtualization topology and routing policies<br>- Implemented router (pfSense) and host (iptables) controls | - Enforced least-privilege communication rules to reduce lateral movement risk<br>- Verified enforcement with active scanning and packet captures | VirtualBox, pfSense, iptables, Nmap, Wireshark |
@@ -47,9 +48,11 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | Windows Sysprep | VM generalization and custom image preparation |
 | ARM Templates (JSON) | Declarative Infrastructure-as-Code for repeatable Azure resource deployments |
 | Azure Bicep | Concise IaC language that compiles to ARM, with typed parameters and decorators |
+| Terraform | Infrastructure-as-Code for Cloudflare security configuration management |
+| Cloudflare (WAF, Access, Workers, Bot Protection) | Edge security — WAF rules, Zero Trust access, security headers, bot mitigation |
+| Cloudflare Workers | Edge compute for injecting HTTP security headers on every response |
 | Azure PowerShell / Cloud Shell | Infrastructure scripting, permission validation, and CLI-driven administration |
 | GitHub & GitHub Actions | Version control and CI/CD pipeline automation |
-| Cloudflare | DNS management, DNSSEC, and domain security |
 | Docker | Local reproducible development and deployment environments |
 | Python | Backend logic, automation scripting, and security tooling |
 | pytest | Unit testing and CI pipeline validation |
