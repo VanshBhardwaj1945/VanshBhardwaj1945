@@ -80,6 +80,8 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 
 ## Certifications
 
+
+- **Microsoft Certified: Azure Administrator (AZ-104)**  _Status: In Progress_
 - **Microsoft Certified: Azure Fundamentals (AZ-900)**  
 - **CompTIA Security+ (SY0-701)**  
 - **Google Cybersecurity Professional Certificate**
