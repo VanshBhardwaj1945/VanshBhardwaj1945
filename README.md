@@ -44,9 +44,10 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | **DevOps & CI/CD** | GitHub, GitHub Actions, Azure CLI, Azure PowerShell, Docker |
 | **Detection & SIEM** | Splunk |
 | **Network Analysis & Recon** | Wireshark, tcpdump, Nmap, Zenmap |
-| **Firewall & Segmentation** | pfSense, iptables |
+| **Firewall & Segmentation** | pfSense, iptables, WAF, NSG |
 | **Virtualization & Imaging** | VirtualBox, VMware, Windows Sysprep |
-| **Programming and Scripting** | Python, Powershell/Bash JavaScript, C++, Java |
+| **Operating Systems** | Linux (Ubuntu/Kali), Windows Server, Windows, Mac OS |
+| **Programming and Scripting** | Python, Powershell/Bash, JavaScript, C++, Java |
 | **Frontend & Testing** | HTML, CSS, pytest |
 | **Security Frameworks** | OWASP Top 10 |
 
