@@ -25,12 +25,11 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | Project | What I Built | Security + Cloud Impact | Technologies |
 |---|---|---|---|
 | **[Cloud-Native Resume Platform (Featured)](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | Serverless Azure resume app with full-stack architecture and automated CI/CD pipelines | Secured API access via abstraction and identity separation; automated deployments reduce human error and production risk | Microsoft Azure (Storage, Front Door, Functions, Cosmos DB), GitHub Actions, Python, pytest, HTML, CSS, JavaScript, Cloudflare, Azure CLI, Docker, Terraform |
-| **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)** | 6-phase hardening of a live production site — custom WAF rules, Zero Trust access, HTTP security headers Worker, bot protection, and rate limiting, all managed as Terraform IaC | Blocked real bot traffic and POST probing observed in live analytics; eliminated SQLi, XSS, and Magecart attack classes at the edge before reaching Azure | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), Terraform, JavaScript, Azure, HTTP Requests, OWASP|
-| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | Hands-on AZ-900 and AZ-104 labs covering RBAC, Azure Policy, VM management, VMSS, and IaC via ARM Templates and Bicep | Validates governance, least-privilege access, and repeatable infrastructure deployment across multiple toolchains | Microsoft Azure, Entra ID, Azure Policy, VMs, VMSS, ARM Templates, Bicep, PowerShell, Azure CLI, Load Balancer, NSG |
+| **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)** | 6-phase hardening of a live production site — custom WAF rules, Zero Trust access, HTTP security headers Worker, bot protection, and rate limiting, all managed as Terraform IaC | Blocked real bot traffic and POST probing observed in live analytics; eliminated SQLi, XSS, and Magecart attack classes at the edge before reaching Azure | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), Terraform, JavaScript, Azure, HTTP Requests, OWASP |
+| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | Hands-on AZ-900 and AZ-104 labs covering RBAC, Azure Policy, VNet peering, custom routing, VM management, VMSS, and IaC via ARM Templates and Bicep | Validates governance, least-privilege access, network segmentation, and repeatable infrastructure deployment across multiple toolchains | Microsoft Azure, Entra ID, Azure Policy, VNet Peering, Network Watcher, Route Tables, VMs, VMSS, ARM Templates, Bicep, PowerShell, Azure CLI, Load Balancer, NSG |
 | **[Application-Layer DoS Detection Lab (Slowloris)](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | Controlled Slowloris attack lab with SIEM ingestion, detection queries, and packet-level telemetry analysis | Detection engineering for low-bandwidth app-layer attacks invisible to network-volume monitoring | Splunk, Apache, Wireshark, Nmap, Kali |
 | **[Network Segmentation & Firewall Policy Lab](https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378)** | Multi-subnet virtualization topology with router and host-level firewall policy enforcement | Least-privilege network segmentation to reduce lateral movement risk, verified with active scanning | VirtualBox, pfSense, iptables, Nmap, Wireshark |
 
-## Tech Stack
 
 ## Tech Stack
 
@@ -38,7 +37,7 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 |--------|--------------|
 | **Cloud Platform** | Microsoft Azure (Portal, Storage, Front Door, Functions, Cosmos DB) |
 | **Identity & Governance** | Microsoft Entra ID, RBAC, Azure Policy, Management Groups |
-| **Compute & Networking** | Azure VMs, VM Scale Sets, Load Balancer, NSG |
+| **Compute & Networking** | Azure VMs, VM Scale Sets, Load Balancer, NSG, VNet Peering, Network Watcher, Route Tables |
 | **Infrastructure as Code** | Terraform, ARM Templates (JSON), Bicep |
 | **Edge & Web Security** | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), HTTP Security Headers |
 | **DevOps & CI/CD** | GitHub, GitHub Actions, Azure CLI, Azure PowerShell, Docker |
@@ -47,9 +46,10 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | **Firewall & Segmentation** | pfSense, iptables, WAF, NSG |
 | **Virtualization & Imaging** | VirtualBox, VMware, Windows Sysprep |
 | **Operating Systems** | Linux (Ubuntu/Kali), Windows Server, Windows, Mac OS |
-| **Programming and Scripting** | Python, Powershell/Bash, JavaScript, C++, Java |
+| **Programming and Scripting** | Python, PowerShell/Bash, JavaScript, C++, Java |
 | **Frontend & Testing** | HTML, CSS, pytest |
 | **Security Frameworks** | OWASP Top 10 |
+
 
 ## Experience
 
@@ -65,8 +65,7 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 
 ## Certifications
 
-
-- **Microsoft Certified: Azure Administrator (AZ-104)**  _Status: In Progress_
+- **Microsoft Certified: Azure Administrator (AZ-104)** — *In Progress*
 - **Microsoft Certified: Azure Fundamentals (AZ-900)**  
 - **CompTIA Security+ (SY0-701)**  
 - **Google Cybersecurity Professional Certificate**
