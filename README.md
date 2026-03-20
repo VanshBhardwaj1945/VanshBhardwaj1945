@@ -22,25 +22,28 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 
 ## Projects & Labs
 
-| Project | What I Built | Security + Cloud Impact | Technologies |
-|---|---|---|---|
-| **[Cloud-Native Resume Platform (Featured)](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | Serverless Azure resume app with full-stack architecture and automated CI/CD pipelines | Secured API access via abstraction and identity separation; automated deployments reduce human error and production risk | Microsoft Azure (Storage, Front Door, Functions, Cosmos DB), GitHub Actions, Python, pytest, HTML, CSS, JavaScript, Cloudflare, Azure CLI, Docker, Terraform |
-| **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)** | 6-phase hardening of a live production site — custom WAF rules, Zero Trust access, HTTP security headers Worker, bot protection, and rate limiting, all managed as Terraform IaC | Blocked real bot traffic and POST probing observed in live analytics; eliminated SQLi, XSS, and Magecart attack classes at the edge before reaching Azure | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), Terraform, JavaScript, Azure, HTTP Requests, OWASP |
-| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | Hands-on AZ-900 and AZ-104 labs covering RBAC, Azure Policy, VNet peering, custom routing, VM management, VMSS, and IaC via ARM Templates and Bicep | Validates governance, least-privilege access, network segmentation, and repeatable infrastructure deployment across multiple toolchains | Microsoft Azure, Entra ID, Azure Policy, VNet Peering, Network Watcher, Route Tables, VMs, VMSS, ARM Templates, Bicep, PowerShell, Azure CLI, Load Balancer, NSG |
-| **[Application-Layer DoS Detection Lab (Slowloris)](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | Controlled Slowloris attack lab with SIEM ingestion, detection queries, and packet-level telemetry analysis | Detection engineering for low-bandwidth app-layer attacks invisible to network-volume monitoring | Splunk, Apache, Wireshark, Nmap, Kali |
-| **[Network Segmentation & Firewall Policy Lab](https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378)** | Multi-subnet virtualization topology with router and host-level firewall policy enforcement | Least-privilege network segmentation to reduce lateral movement risk, verified with active scanning | VirtualBox, pfSense, iptables, Nmap, Wireshark |
+| Project | Status | What I Built | Security + Cloud Impact | Technologies |
+|---|---|---|---|---|
+| **[Click Arena — DevSecOps Pipeline (Featured)](https://github.com/VanshBhardwaj1945/Click-Arena-DevSecOps)** | In Progress | Real-time multiplayer game used as a vehicle for a full DevSecOps pipeline on Azure — containerized, deployed, and continuously delivered via Jenkins | CI/CD pipeline with automated build, push, and deploy; infrastructure fully defined as Terraform IaC; security scanning stages being added | Python, Flask, Flask-SocketIO, Docker, Azure Container Registry, Azure Container Apps, Terraform, Jenkins, Ansible, Azure CLI |
+| **[Cloud-Native Resume Platform (Featured)](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | Complete | Serverless Azure resume app with full-stack architecture and automated CI/CD pipelines | Secured API access via abstraction and identity separation; automated deployments reduce human error and production risk | Microsoft Azure (Storage, Front Door, Functions, Cosmos DB), GitHub Actions, Python, pytest, HTML, CSS, JavaScript, Cloudflare, Azure CLI, Docker, Terraform |
+| **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)** | Complete | 6-phase hardening of a live production site — custom WAF rules, Zero Trust access, HTTP security headers Worker, bot protection, and rate limiting, all managed as Terraform IaC | Blocked real bot traffic and POST probing observed in live analytics; eliminated SQLi, XSS, and Magecart attack classes at the edge before reaching Azure | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), Terraform, JavaScript, Azure, HTTP Requests, OWASP |
+| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | Complete | Hands-on AZ-900 and AZ-104 labs covering RBAC, Azure Policy, VNet peering, custom routing, VM management, VMSS, and IaC via ARM Templates and Bicep | Validates governance, least-privilege access, network segmentation, and repeatable infrastructure deployment across multiple toolchains | Microsoft Azure, Entra ID, Azure Policy, VNet Peering, Network Watcher, Route Tables, VMs, VMSS, ARM Templates, Bicep, PowerShell, Azure CLI, Load Balancer, NSG |
+| **[Application-Layer DoS Detection Lab (Slowloris)](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | Complete | Controlled Slowloris attack lab with SIEM ingestion, detection queries, and packet-level telemetry analysis | Detection engineering for low-bandwidth app-layer attacks invisible to network-volume monitoring | Splunk, Apache, Wireshark, Nmap, Kali |
+| **[Network Segmentation & Firewall Policy Lab](https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378)** | Complete | Multi-subnet virtualization topology with router and host-level firewall policy enforcement | Least-privilege network segmentation to reduce lateral movement risk, verified with active scanning | VirtualBox, pfSense, iptables, Nmap, Wireshark |
 
 
 ## Tech Stack
 
 | Domain | Technologies |
 |--------|--------------|
-| **Cloud Platform** | Microsoft Azure (Portal, Storage, Front Door, Functions, Cosmos DB) |
-| **Identity & Governance** | Microsoft Entra ID, RBAC, Azure Policy, Management Groups |
+| **Cloud Platform** | Microsoft Azure (Portal, Storage, Front Door, Functions, Cosmos DB, Container Registry, Container Apps, Log Analytics) |
+| **Identity & Governance** | Microsoft Entra ID, RBAC, Azure Policy, Management Groups, Service Principals |
 | **Compute & Networking** | Azure VMs, VM Scale Sets, Load Balancer, NSG, VNet Peering, Network Watcher, Route Tables |
 | **Infrastructure as Code** | Terraform, ARM Templates (JSON), Bicep |
+| **Containers** | Docker, Azure Container Registry, Azure Container Apps |
+| **CI/CD** | Jenkins, GitHub Actions, Azure CLI, Azure PowerShell |
+| **Configuration Management** | Ansible |
 | **Edge & Web Security** | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), HTTP Security Headers |
-| **DevOps & CI/CD** | GitHub, GitHub Actions, Azure CLI, Azure PowerShell, Docker |
 | **Detection & SIEM** | Splunk |
 | **Network Analysis & Recon** | Wireshark, tcpdump, Nmap, Zenmap |
 | **Firewall & Segmentation** | pfSense, iptables, WAF, NSG |
