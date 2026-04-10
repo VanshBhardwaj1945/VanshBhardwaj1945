@@ -24,7 +24,7 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 
 | Project | Status | What I Built | Security + Cloud Impact | Technologies |
 |---|---|---|---|---|
-| **[Click Arena — DevSecOps Pipeline (Featured)](https://github.com/VanshBhardwaj1945/Click-Arena-DevSecOps)** | In Progress | Real-time multiplayer game used as a vehicle for a full DevSecOps pipeline on Azure — containerized, deployed, and continuously delivered via Jenkins | CI/CD pipeline with automated build, push, and deploy; infrastructure fully defined as Terraform IaC; security scanning stages being added | Python, Flask, Flask-SocketIO, Docker, Azure Container Registry, Azure Container Apps, Terraform, Jenkins, Ansible, Azure CLI |
+| **[Click Arena — DevSecOps Pipeline (Featured)](https://github.com/VanshBhardwaj1945/Click-Arena-DevSecOps)** | Complete | Real-time multiplayer game used as a vehicle for a full DevSecOps pipeline on Azure — containerized, security-scanned, and continuously delivered via Jenkins with post-deploy verification and live monitoring | Full CI/CD pipeline with automated secret scanning (Gitleaks), SAST (SonarQube), dependency scanning (Snyk), container scanning (Trivy), infrastructure as Terraform IaC, edge security via Cloudflare Worker, and observability via Azure Monitor and Grafana | Python, Flask, Flask-SocketIO, Docker, Azure Container Registry, Azure Container Apps, Azure Log Analytics, Terraform, Jenkins, Ansible, SonarQube, Snyk, Trivy, Gitleaks, Cloudflare Workers, Grafana, Azure CLI |
 | **[Cloud-Native Resume Platform (Featured)](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | Complete | Serverless Azure resume app with full-stack architecture and automated CI/CD pipelines | Secured API access via abstraction and identity separation; automated deployments reduce human error and production risk | Microsoft Azure (Storage, Front Door, Functions, Cosmos DB), GitHub Actions, Python, pytest, HTML, CSS, JavaScript, Cloudflare, Azure CLI, Docker, Terraform |
 | **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)** | Complete | 6-phase hardening of a live production site — custom WAF rules, Zero Trust access, HTTP security headers Worker, bot protection, and rate limiting, all managed as Terraform IaC | Blocked real bot traffic and POST probing observed in live analytics; eliminated SQLi, XSS, and Magecart attack classes at the edge before reaching Azure | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), Terraform, JavaScript, Azure, HTTP Requests, OWASP |
 | **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | In Progress | Hands-on AZ-900 and AZ-104 labs covering RBAC, Azure Policy, VNet peering, custom routing, VM management, VMSS, and IaC via ARM Templates and Bicep | Validates governance, least-privilege access, network segmentation, and repeatable infrastructure deployment across multiple toolchains | Microsoft Azure, Entra ID, Azure Policy, VNet Peering, Network Watcher, Route Tables, VMs, VMSS, ARM Templates, Bicep, PowerShell, Azure CLI, Load Balancer, NSG |
@@ -43,7 +43,12 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | **Containers** | Docker, Azure Container Registry, Azure Container Apps |
 | **CI/CD** | Jenkins, GitHub Actions, Azure CLI, Azure PowerShell |
 | **Configuration Management** | Ansible |
+| **Secret Detection** | Gitleaks (CI pipeline + pre-commit hooks) |
+| **SAST** | SonarQube |
+| **Dependency Scanning** | Snyk |
+| **Container Security** | Trivy |
 | **Edge & Web Security** | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), HTTP Security Headers |
+| **Observability** | Grafana, Azure Monitor, Azure Log Analytics |
 | **Detection & SIEM** | Splunk |
 | **Network Analysis & Recon** | Wireshark, tcpdump, Nmap, Zenmap |
 | **Firewall & Segmentation** | pfSense, iptables, WAF, NSG |
