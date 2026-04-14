@@ -1,41 +1,52 @@
 # Vansh Bhardwaj  
-Cloud Security · DevSecOps · Cloud Infrastructure · Security Engineering · DevOps  
+Cloud Security · DevSecOps · Security Engineering · Cloud Infrastructure
 
 📍 Austin, Texas  
-📧 Email: Scorpio.vansh@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/vanshbhardwaj1945/
+📧 Scorpio.vansh@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/vanshbhardwaj1945/)
 
 ---
 
 ## About
 
-My journey began with curiosity — breaking lab setups, rebuilding them correctly, and learning how systems behave under stress. That curiosity led me from networking and core security fundamentals into building cloud-hosted systems and asking how to design them securely from day one.
+I got into security the same way most people do — by breaking things and trying to figure out why they broke. That curiosity turned into a habit of building systems from scratch, tearing them apart, and rebuilding them with security baked in from the start rather than bolted on at the end.
 
-I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stress-test until it's reliable and observable. I focus on automation, test-gated deployments, and telemetry-driven validation so systems remain resilient as they scale.
+Right now I'm focused on DevSecOps and cloud security engineering — building tools that automate security decisions, pipelines that enforce security gates before anything ships, and infrastructure that's observable enough to catch problems early.
 
-**Core focus areas**
-- Cloud security and secure cloud infrastructure  
-- DevSecOps: automation, CI/CD, test-gated deployments  
-- Detection engineering and log-driven incident validation  
-- Infrastructure automation and reproducible lab environments
+**What I'm focused on:**
+- Building security tooling in Python — scanners, analyzers, automation
+- DevSecOps: CI/CD pipelines with real security gates, not checkbox scanning
+- Cloud security on Azure and AWS
+- Detection engineering and incident response automation
 
+---
 
-## Projects & Labs
+## Projects
 
-| Project | Status | What I Built | Security + Cloud Impact | Technologies |
-|---|---|---|---|---|
-| **[Click Arena — DevSecOps Pipeline (Featured)](https://github.com/VanshBhardwaj1945/Click-Arena-DevSecOps)** | Complete | Real-time multiplayer game used as a vehicle for a full DevSecOps pipeline on Azure — containerized, security-scanned, and continuously delivered via Jenkins with post-deploy verification and live monitoring | Full CI/CD pipeline with automated secret scanning (Gitleaks), SAST (SonarQube), dependency scanning (Snyk), container scanning (Trivy), infrastructure as Terraform IaC, edge security via Cloudflare Worker, and observability via Azure Monitor and Grafana | Python, Flask, Flask-SocketIO, Docker, Azure Container Registry, Azure Container Apps, Azure Log Analytics, Terraform, Jenkins, Ansible, SonarQube, Snyk, Trivy, Gitleaks, Cloudflare Workers, Grafana, Azure CLI |
-| **[Cloud-Native Resume Platform (Featured)](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | Complete | Serverless Azure resume app with full-stack architecture and automated CI/CD pipelines | Secured API access via abstraction and identity separation; automated deployments reduce human error and production risk | Microsoft Azure (Storage, Front Door, Functions, Cosmos DB), GitHub Actions, Python, pytest, HTML, CSS, JavaScript, Cloudflare, Azure CLI, Docker, Terraform |
-| **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)** | Complete | 6-phase hardening of a live production site — custom WAF rules, Zero Trust access, HTTP security headers Worker, bot protection, and rate limiting, all managed as Terraform IaC | Blocked real bot traffic and POST probing observed in live analytics; eliminated SQLi, XSS, and Magecart attack classes at the edge before reaching Azure | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), Terraform, JavaScript, Azure, HTTP Requests, OWASP |
-| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | In Progress | Hands-on AZ-900 and AZ-104 labs covering RBAC, Azure Policy, VNet peering, custom routing, VM management, VMSS, and IaC via ARM Templates and Bicep | Validates governance, least-privilege access, network segmentation, and repeatable infrastructure deployment across multiple toolchains | Microsoft Azure, Entra ID, Azure Policy, VNet Peering, Network Watcher, Route Tables, VMs, VMSS, ARM Templates, Bicep, PowerShell, Azure CLI, Load Balancer, NSG |
-| **[Application-Layer DoS Detection Lab (Slowloris)](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | Complete | Controlled Slowloris attack lab with SIEM ingestion, detection queries, and packet-level telemetry analysis | Detection engineering for low-bandwidth app-layer attacks invisible to network-volume monitoring | Splunk, Apache, Wireshark, Nmap, Kali |
-| **[Network Segmentation & Firewall Policy Lab](https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378)** | Complete | Multi-subnet virtualization topology with router and host-level firewall policy enforcement | Least-privilege network segmentation to reduce lateral movement risk, verified with active scanning | VirtualBox, pfSense, iptables, Nmap, Wireshark |
+| Project | Status | What I Built | Technologies |
+|---|---|---|---|
+| **[FlowSec — CI/CD Pipeline Security Analyzer](https://github.com/VanshBhardwaj1945/FlowSec)** | In Progress | Python tool that connects to the GitHub API, parses CI/CD pipeline configurations, and runs a rule library against them to find security vulnerabilities — hardcoded secrets, unpinned actions, excessive permissions, supply chain attack vectors. Each finding maps to a MITRE ATT&CK technique and gets an AI-generated attack narrative explaining the specific exploit scenario | Python, PyGithub, PyYAML, Anthropic Claude API, Jinja2, pytest, Docker, rich, ruff, mypy |
+| **[Click Arena — DevSecOps Pipeline](https://github.com/VanshBhardwaj1945/Click-Arena-DevSecOps)** | Complete | Real-time multiplayer game built as a vehicle for a full DevSecOps pipeline on Azure. Jenkins runs secret scanning, SAST, dependency scanning, container scanning, and post-deploy verification on every push. Nothing reaches production without passing all stages | Python, Flask, Docker, Jenkins, Terraform, Ansible, SonarQube, Snyk, Trivy, Gitleaks, Azure Container Apps, Azure Container Registry, Cloudflare Workers, Grafana |
+| **[Cloud Resume Challenge — Azure](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | Complete | Serverless resume site on Azure with a Python visitor counter API, Cosmos DB backend, Azure Front Door CDN, and full CI/CD via GitHub Actions. Infrastructure fully defined as Terraform with test-gated deployments | Azure (Storage, Front Door, Functions, Cosmos DB), Terraform, GitHub Actions, Python, pytest, Cloudflare |
 
+---
+
+## Labs
+
+| Lab | Status | What I Did | Technologies |
+|---|---|---|---|
+| **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)** | Complete | Six-phase hardening of a live production site — custom WAF rules blocking SQLi/XSS/path traversal, Zero Trust access on protected routes, HTTP security headers via a Worker, bot protection, and rate limiting on the API endpoint. Everything managed as Terraform IaC against real traffic | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), Terraform, JavaScript |
+| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | In Progress | Hands-on AZ-104 labs covering RBAC and Management Groups, Azure Policy enforcement, VNet peering and custom routing, VM and VMSS management, and IaC with ARM Templates and Bicep | Azure, Entra ID, Azure Policy, Bicep, ARM Templates, PowerShell, Azure CLI |
+| **[Slowloris DoS Detection Lab](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | Complete | Controlled Slowloris attack against Apache in an isolated VirtualBox lab, with Splunk ingesting Apache logs for detection. Built to understand how low-bandwidth application-layer attacks work and how to detect them at the SIEM level | Splunk, Wireshark, Nmap, Kali, Apache, pfSense |
+| **[Network Segmentation Lab](https://github.com/VanshBhardwaj1945/Project-1-Sandbox-Firewall-Access-Control-CS4371-CS5378)** | Complete | Multi-subnet VirtualBox environment with pfSense as the router/firewall. Built and validated an access control matrix using Nmap scanning and Wireshark packet captures before and after rule deployment | VirtualBox, pfSense, iptables, Nmap, Wireshark |
+
+---
 
 ## Tech Stack
 
 | Domain | Technologies |
-|--------|--------------|
+|---|---|
+| **Programming & Scripting** | Python, PowerShell/Bash, JavaScript, C++, Java |
 | **Cloud Platform** | Microsoft Azure (Portal, Storage, Front Door, Functions, Cosmos DB, Container Registry, Container Apps, Log Analytics) |
 | **Identity & Governance** | Microsoft Entra ID, RBAC, Azure Policy, Management Groups, Service Principals |
 | **Compute & Networking** | Azure VMs, VM Scale Sets, Load Balancer, NSG, VNet Peering, Network Watcher, Route Tables |
@@ -44,7 +55,7 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | **CI/CD** | Jenkins, GitHub Actions, Azure CLI, Azure PowerShell |
 | **Configuration Management** | Ansible |
 | **Secret Detection** | Gitleaks (CI pipeline + pre-commit hooks) |
-| **SAST** | SonarQube |
+| **SAST** | SonarQube, Semgrep, Bandit |
 | **Dependency Scanning** | Snyk |
 | **Container Security** | Trivy |
 | **Edge & Web Security** | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), HTTP Security Headers |
@@ -54,35 +65,31 @@ I enjoy building infrastructure end-to-end: deploy, automate, monitor, and stres
 | **Firewall & Segmentation** | pfSense, iptables, WAF, NSG |
 | **Virtualization & Imaging** | VirtualBox, VMware, Windows Sysprep |
 | **Operating Systems** | Linux (Ubuntu/Kali), Windows Server, Windows, Mac OS |
-| **Programming and Scripting** | Python, PowerShell/Bash, JavaScript, C++, Java |
-| **Frontend & Testing** | HTML, CSS, pytest |
+| **Frontend & Testing** | HTML, CSS, pytest, ruff, mypy |
+| **Security Tooling** | PyYAML, MITRE ATT&CK mapping, abstract rule engines, Anthropic Claude API |
 | **Security Frameworks** | OWASP Top 10 |
 
+---
 
 ## Experience
 
-### Software Engineer Intern — Pitney Bowes  
-**Summer 2023**
+**Software Engineer Intern — Pitney Bowes** | Summer 2023
 
-- Supported cloud development and testing on Microsoft Azure, focusing on reliability, scalability, and secure deployment practices.  
-- Assisted in building APIs and backend services and validated deployments in Azure environments.  
-- Used Citrix Workspace for secure remote development workflows and environment access.  
-- Participated in Agile ceremonies and code reviews to maintain quality and secure coding practices.  
-- Documented test results and automation steps to improve reproducibility.
+Worked on cloud development and testing on Microsoft Azure. Helped build and validate APIs and backend services, participated in Agile ceremonies and code reviews, and documented test procedures to keep things reproducible.
 
+---
 
 ## Certifications
 
-- **Microsoft Certified: Azure Administrator (AZ-104)** — *In Progress*
-- **Microsoft Certified: Azure Fundamentals (AZ-900)**  
-- **CompTIA Security+ (SY0-701)**  
-- **Google Cybersecurity Professional Certificate**
+- Microsoft Certified: Azure Administrator (AZ-104) — *In Progress*
+- Microsoft Certified: Azure Fundamentals (AZ-900)
+- CompTIA Security+ (SY0-701)
+- Google Cybersecurity Professional Certificate
 
+---
 
 ## Education
 
-B.S. Computer Science — Cybersecurity Concentration  
-Minor in Business Administration
-
-Expected Graduation: May 2027  
-Major GPA: 3.0
+**B.S. Computer Science — Cybersecurity Concentration**  
+Minor in Business Administration  
+Texas State University | Expected May 2027
