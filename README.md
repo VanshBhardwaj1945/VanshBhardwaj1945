@@ -25,7 +25,7 @@ Right now I'm focused on DevSecOps and cloud security engineering — building t
 
 | Project | Status | What I Built | Technologies |
 |---|---|---|---|
-| **[FlowSec — CI/CD Pipeline Security Analyzer](https://github.com/VanshBhardwaj1945/FlowSec)** | In Progress | Python tool that connects to the GitHub API, parses CI/CD pipeline configurations, and runs a rule library against them to find security vulnerabilities — hardcoded secrets, unpinned actions, excessive permissions, supply chain attack vectors. Each finding maps to a MITRE ATT&CK technique and gets an AI-generated attack narrative explaining the specific exploit scenario | Python, PyGithub, PyYAML, Anthropic Claude API, Jinja2, pytest, Docker, rich, ruff, mypy |
+| **[FlowSec — CI/CD Pipeline Security Analyzer](https://github.com/VanshBhardwaj1945/FlowSec)** | Complete | Published Python security tool (`pip install flowsec`) that scans GitHub Actions, GitLab CI, and Azure DevOps pipeline configurations for attack vectors. 13 rules mapped to MITRE ATT&CK and OWASP CICD Top 10. Findings include AI-generated attack narratives, interactive HTML reports with PDF export, and a `--fail-on` flag that blocks PRs when critical issues are found. Platform-aware rule engine handles all three CI/CD platforms from a single codebase | Python, PyGithub, PyYAML, Anthropic Claude API, Jinja2, rich, Docker, hatch, ruff, mypy, bandit |
 | **[Click Arena — DevSecOps Pipeline](https://github.com/VanshBhardwaj1945/Click-Arena-DevSecOps)** | Complete | Real-time multiplayer game built as a vehicle for a full DevSecOps pipeline on Azure. Jenkins runs secret scanning, SAST, dependency scanning, container scanning, and post-deploy verification on every push. Nothing reaches production without passing all stages | Python, Flask, Docker, Jenkins, Terraform, Ansible, SonarQube, Snyk, Trivy, Gitleaks, Azure Container Apps, Azure Container Registry, Cloudflare Workers, Grafana |
 | **[Cloud Resume Challenge — Azure](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | Complete | Serverless resume site on Azure with a Python visitor counter API, Cosmos DB backend, Azure Front Door CDN, and full CI/CD via GitHub Actions. Infrastructure fully defined as Terraform with test-gated deployments | Azure (Storage, Front Door, Functions, Cosmos DB), Terraform, GitHub Actions, Python, pytest, Cloudflare |
 
@@ -66,8 +66,10 @@ Right now I'm focused on DevSecOps and cloud security engineering — building t
 | **Virtualization & Imaging** | VirtualBox, VMware, Windows Sysprep |
 | **Operating Systems** | Linux (Ubuntu/Kali), Windows Server, Windows, Mac OS |
 | **Frontend & Testing** | HTML, CSS, pytest, ruff, mypy |
-| **Security Tooling** | PyYAML, MITRE ATT&CK mapping, abstract rule engines, Anthropic Claude API |
-| **Security Frameworks** | OWASP Top 10 |
+| **Security Tooling** | Custom rule engines, MITRE ATT&CK mapping, OWASP CICD Top 10, PyYAML, abstract base classes |
+| **AI Integration** | Anthropic Claude API, prompt engineering, local response caching |
+| **Package Publishing** | PyPI, hatch, pyproject.toml, trusted publishers, GitHub Actions CI/CD release automation |
+| **Security Frameworks** | OWASP Top 10, OWASP CICD Top 10, MITRE ATT&CK, SLSA |
 
 ---
 
