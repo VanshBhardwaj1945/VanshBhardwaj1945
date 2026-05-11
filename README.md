@@ -75,7 +75,7 @@ Right now I'm focused on DevSecOps and cloud security engineering — building t
 
 ## Experience
 
-**Software Engineer Intern — Pitney Bowes** | Summer 2023
+**Software Engineer Intern — Pitney Bowes** | Summer 2024
 
 Worked on cloud development and testing on Microsoft Azure. Helped build and validate APIs and backend services, participated in Agile ceremonies and code reviews, and documented test procedures to keep things reproducible.
 
