@@ -75,17 +75,17 @@ Right now I'm focused on DevSecOps and cloud security engineering — building t
 
 ## Experience
 
-***Security Engineer Intern*** | Upcoming - Fall 2026
+- ***Security Engineer Intern*** | Upcoming - Fall 2026
 
-To be seen
+  TBD
 
-**Security Engineer Intern — Cloudflare** | In Progress - Summer 2026
+- **Security Engineer Intern — Cloudflare** | In Progress - Summer 2026
 
-Working on the Enterprise Identity and Access Management (EIAM) team. Automating internal employee access provisioning and deprovisioning across enterprise software, ensuring the right people have the right access at the right time with no manual intervention.
+  Working on the Enterprise Identity and Access Management (EIAM) team. Automating internal employee access provisioning and deprovisioning across   enterprise software, ensuring the right people have the right access at the right time with no manual intervention.
 
-**Software Engineer Intern — Pitney Bowes** | Summer 2024
+- **Software Engineer Intern — Pitney Bowes** | Summer 2024
 
-Worked on cloud development and testing on Microsoft Azure. Helped build and validate APIs and backend services, participated in Agile ceremonies and code reviews, and documented test procedures to keep things reproducible.
+  Worked on cloud development and testing on Microsoft Azure. Helped build and validate APIs and backend services, participated in Agile ceremonies and code reviews, and documented test procedures to keep things reproducible.
 
 ---
 
