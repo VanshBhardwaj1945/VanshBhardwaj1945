@@ -76,9 +76,9 @@ Right now I'm focused on DevSecOps and cloud security engineering — building t
 
 ## Experience
 
-- ***Security Engineer Intern*** | Upcoming - Fall 2026
+- **Security Engineer Co-op — MISO (Midcontinent Independent System Operator)** | Upcoming - Fall 2026
 
-  TBD
+  Will help defend the bulk electric grid serving 45 million customers across 15 US states — designing and implementing technical security controls and reference architectures for critical infrastructure, working hands-on with enterprise defense tooling (SIEM, IDS, EDR, NDR), and automating security workflows in Python and PowerShell across Azure and AWS.
 
 - **Security Engineer Intern — Cloudflare** | In Progress - Summer 2026
 
