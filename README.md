@@ -1,23 +1,9 @@
 # Vansh Bhardwaj  
-Cloud Security · DevSecOps · Security Engineering · Cloud Infrastructure
 
 📍 Austin, Texas  
 📧 Scorpio.vansh@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/vanshbhardwaj1945/)
 
----
-
-## About
-
-I got into security the same way most people do — by breaking things and trying to figure out why they broke. That curiosity turned into a habit of building systems from scratch, tearing them apart, and rebuilding them with security baked in from the start rather than bolted on at the end.
-
-Right now I'm focused on DevSecOps and cloud security engineering — building tools that automate security decisions, pipelines that enforce security gates before anything ships, and infrastructure that's observable enough to catch problems early.
-
-**What I'm focused on:**
-- Building security tooling in Python — scanners, analyzers, automation
-- DevSecOps: CI/CD pipelines with real security gates, not checkbox scanning
-- Cloud security on Azure and AWS
-- Detection engineering and incident response automation
 
 ---
 
