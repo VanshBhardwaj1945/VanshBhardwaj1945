@@ -1,8 +1,18 @@
 # Vansh Bhardwaj
 
-📍 Austin, Texas &nbsp;•&nbsp; 📧 scorpio.vansh@gmail.com &nbsp;•&nbsp; 🔗 [LinkedIn](https://www.linkedin.com/in/vanshbhardwaj1945/)
+📍 Austin, Texas &nbsp;•&nbsp; 📧 scorpio.vansh@gmail.com &nbsp;•&nbsp; 🌐 [vanshbhardwaj.com](https://vanshbhardwaj.com) &nbsp;•&nbsp; 🔗 [LinkedIn](https://www.linkedin.com/in/vanshbhardwaj1945/)
 
 Security engineer who builds. Cloudflare Enterprise IAM last summer, security co-op at MISO (the power grid) right now, and a pile of security tools, cloud projects, and AI agents I've shipped in between. I like taking things apart, figuring out how they break, and putting them back together harder to break.
+
+<p align="left">
+  <a href="https://pypi.org/project/flowsec/"><img src="https://img.shields.io/pypi/v/flowsec?label=flowsec%20on%20PyPI&color=2f7d5b" alt="flowsec on PyPI" /></a>
+  <img src="https://img.shields.io/badge/Security%2B-SY0--701-b7791f" alt="Security+" />
+  <img src="https://img.shields.io/badge/focus-IAM%20%C2%B7%20detection%20%C2%B7%20AI--security-6e40c9" alt="focus" />
+  <img src="https://komarev.com/ghpvc/?username=VanshBhardwaj1945&label=profile%20views&color=555" alt="profile views" />
+</p>
+
+> **Currently:** defending the power grid at MISO by day, sharpening for Summer 2027 security-engineering internships by night. Building a self-hosted AI platform (RAG + local models) on the side.
+
 
 ---
 
