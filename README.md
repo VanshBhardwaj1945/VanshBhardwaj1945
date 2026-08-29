@@ -6,9 +6,9 @@ Security engineer who builds. Cloudflare Enterprise IAM last summer, security co
 
 <p align="left">
   <a href="https://pypi.org/project/flowsec/"><img src="https://img.shields.io/pypi/v/flowsec?label=flowsec%20on%20PyPI&color=2f7d5b" alt="flowsec on PyPI" /></a>
+  <a href="https://pypi.org/project/flowsec/"><img src="https://img.shields.io/pypi/dm/flowsec?label=pip%20installs&color=2f7d5b" alt="pip installs" /></a>
   <img src="https://img.shields.io/badge/Security%2B-SY0--701-b7791f" alt="Security+" />
-  <img src="https://img.shields.io/badge/focus-IAM%20%C2%B7%20detection%20%C2%B7%20AI--security-6e40c9" alt="focus" />
-  <img src="https://komarev.com/ghpvc/?username=VanshBhardwaj1945&label=profile%20views&color=555" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=VanshBhardwaj1945&label=profile%20views&style=flat&color=blue" alt="profile views" />
 </p>
 
 > **Currently:** defending the power grid at MISO by day, sharpening for Summer 2027 security-engineering internships by night. Building a self-hosted AI platform (RAG + local models) on the side.
@@ -93,3 +93,13 @@ CompTIA Security+ (SY0-701) &nbsp;·&nbsp; Microsoft Azure Fundamentals (AZ-900)
 
 **B.S. Computer Science — Cybersecurity Concentration** · Minor in Business Administration
 Texas State University · Expected December 2027
+
+---
+
+### A few things I'm into right now
+- **Agent security** — what happens when an AI agent has real access, and how you put it on a short leash
+- **Identity as the perimeter** — non-human identity, short-lived creds, workload attestation
+- **Self-hosting** — running my own AI stack (RAG + local models) instead of renting everyone else's
+- **Breaking my own stuff** — I attack the things I build before anyone else gets to
+
+<sub>Fun fact: the platform that found this job, wrote the resume, and tracked the application is one I built myself. Meta, I know.</sub>
