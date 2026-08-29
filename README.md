@@ -10,21 +10,6 @@ Security engineer who builds. Cloudflare Enterprise IAM last summer, security co
   <img src="https://komarev.com/ghpvc/?username=VanshBhardwaj1945&label=profile%20views&style=flat&color=blue" alt="profile views" />
 </p>
 
-```console
-$ whoami
-vansh — security engineer who builds
-
-$ cat ~/.stack
-identity · detection · appsec · cloud · the AI agents around them
-
-$ ./status --now
-[MISO]      defending the grid, 45M people downstream
-[building]  a self-hosted AI platform, because renting everyone else's felt wrong
-[seeking]   Summer 2027 security-engineering internships
-
-$ ./philosophy
-break it → understand it → build it back harder to break
-```
 
 > **Currently:** defending the power grid at MISO by day, sharpening for Summer 2027 security-engineering internships by night. Building a self-hosted AI platform (RAG + local models) on the side.
 
@@ -116,5 +101,3 @@ Texas State University · Expected December 2027
 - **Identity as the perimeter** — non-human identity, short-lived creds, workload attestation
 - **Self-hosting** — running my own AI stack (RAG + local models) instead of renting everyone else's
 - **Breaking my own stuff** — I attack the things I build before anyone else gets to
-
-<sub>Fun fact: the platform that found this job, wrote the resume, and tracked the application is one I built myself. Meta, I know.</sub>
