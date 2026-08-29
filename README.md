@@ -6,10 +6,26 @@ Security engineer who builds. Cloudflare Enterprise IAM last summer, security co
 
 <p align="left">
   <a href="https://pypi.org/project/flowsec/"><img src="https://img.shields.io/pypi/v/flowsec?label=flowsec%20on%20PyPI&color=2f7d5b" alt="flowsec on PyPI" /></a>
-  <a href="https://pypi.org/project/flowsec/"><img src="https://img.shields.io/pypi/dm/flowsec?label=pip%20installs&color=2f7d5b" alt="pip installs" /></a>
   <img src="https://img.shields.io/badge/Security%2B-SY0--701-b7791f" alt="Security+" />
+  <a href="https://pypi.org/project/flowsec/"><img src="https://img.shields.io/pypi/dm/flowsec?label=downloads&color=2f7d5b" alt="downloads" /></a>
   <img src="https://komarev.com/ghpvc/?username=VanshBhardwaj1945&label=profile%20views&style=flat&color=blue" alt="profile views" />
 </p>
+
+```console
+$ whoami
+vansh — security engineer who builds
+
+$ cat ~/.stack
+identity · detection · appsec · cloud · the AI agents around them
+
+$ ./status --now
+[MISO]      defending the grid, 45M people downstream
+[building]  a self-hosted AI platform, because renting everyone else's felt wrong
+[seeking]   Summer 2027 security-engineering internships
+
+$ ./philosophy
+break it → understand it → build it back harder to break
+```
 
 > **Currently:** defending the power grid at MISO by day, sharpening for Summer 2027 security-engineering internships by night. Building a self-hosted AI platform (RAG + local models) on the side.
 
