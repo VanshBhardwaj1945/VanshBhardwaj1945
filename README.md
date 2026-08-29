@@ -1,92 +1,85 @@
-# Vansh Bhardwaj  
+# Vansh Bhardwaj
 
-📍 Austin, Texas  
-📧 Scorpio.vansh@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/vanshbhardwaj1945/)
+📍 Austin, Texas &nbsp;•&nbsp; 📧 scorpio.vansh@gmail.com &nbsp;•&nbsp; 🔗 [LinkedIn](https://www.linkedin.com/in/vanshbhardwaj1945/)
 
+Security engineer who builds. Cloudflare Enterprise IAM last summer, security co-op at MISO (the power grid) right now, and a pile of security tools, cloud projects, and AI agents I've shipped in between. I like taking things apart, figuring out how they break, and putting them back together harder to break.
 
 ---
 
 ## Projects
 
-| Project | Status | What I Built | Technologies |
-|---|---|---|---|
-| **[Job Tracker Automation](https://github.com/VanshBhardwaj1945/Job-Tracker-Automation)** | Complete | Automates my whole job hunt. Scheduled workflows discover jobs hourly, Claude scores each one against my profile, and a serverless dashboard tracks every application. It also writes tailored resumes and cover letters per job — generated on my own laptop by a local Claude Code agent reached through a Cloudflare Tunnel, at zero API cost. Built on Cloudflare Workers + D1 + R2 behind Zero Trust Access, fully Terraform, with prompt caching and batch requests keeping AI spend tiny | Cloudflare (Workers, D1, R2, Zero Trust Access, Tunnel), TypeScript, Hono, Terraform, Python, GitHub Actions, Anthropic Claude (Haiku + Opus, Message Batches), Discord, IMAP |
-| **[Browser Render Service](https://github.com/VanshBhardwaj1945/browser-render)** | Complete | Small, security-dense AWS service that fetches JavaScript-rendered pages for the Job Tracker: POST a URL, get clean text back. A URL-fetcher is a textbook SSRF target, so the design is built around that threat — CIDR blocklists, pre-flight DNS resolution, and per-request browser interception keep attacker-supplied URLs away from private and cloud-metadata addresses; the SSRF guard fails closed while the S3-backed threat blocklist fails open. Zero static AWS keys (GitHub OIDC deploys), fully Terraform, scale-to-zero | AWS Lambda, puppeteer-core + @sparticuz/chromium, Terraform, GitHub OIDC, S3, EventBridge, CloudWatch |
-| **[FlowSec — CI/CD Pipeline Security Analyzer](https://github.com/VanshBhardwaj1945/FlowSec)** | Complete | Published Python security tool (`pip install flowsec`) that scans GitHub Actions, GitLab CI, and Azure DevOps pipeline configurations for attack vectors. 25+ rules mapped to MITRE ATT&CK and OWASP CICD Top 10. Findings include AI-generated attack narratives, interactive HTML reports with PDF export, a `--fail-on` flag that blocks PRs, and SARIF export that lands results directly in GitHub's code-scanning Security tab. Platform-aware rule engine handles all three CI/CD platforms from a single codebase | Python, PyGithub, PyYAML, Anthropic Claude API, Jinja2, rich, Docker, hatch, ruff, mypy, bandit |
-| **[Click Arena — DevSecOps Pipeline](https://github.com/VanshBhardwaj1945/Click-Arena-DevSecOps)** | Complete | Real-time multiplayer game built as a vehicle for a full DevSecOps pipeline on Azure. Jenkins runs secret scanning, SAST, dependency scanning, container scanning, and post-deploy verification on every push. Nothing reaches production without passing all stages | Python, Flask, Docker, Jenkins, Terraform, Ansible, SonarQube, Snyk, Trivy, Gitleaks, Azure Container Apps, Azure Container Registry, Cloudflare Workers, Grafana |
-| **[Cloud Resume Challenge — Azure](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)** | Complete | Serverless resume site on Azure with a Python visitor counter API, Cosmos DB backend, Azure Front Door CDN, and full CI/CD via GitHub Actions. Infrastructure fully defined as Terraform with test-gated deployments | Azure (Storage, Front Door, Functions, Cosmos DB), Terraform, GitHub Actions, Python, pytest, Cloudflare |
+**[FlowSec — CI/CD Pipeline Security Scanner](https://github.com/VanshBhardwaj1945/FlowSec)** &nbsp;·&nbsp; `pip install flowsec`
+A published Python tool that scans GitHub Actions, GitLab CI, and Azure DevOps pipelines for attack vectors. 25+ rules mapped to MITRE ATT&CK and the OWASP CI/CD Top 10, AI-generated attack narratives, a `--fail-on` flag that blocks risky PRs, and SARIF export straight into GitHub's Security tab.
+`Python · PyGithub · Anthropic Claude API · SARIF · Docker · PyPI`
+
+**[Job Tracker Automation](https://github.com/VanshBhardwaj1945/Job-Tracker-Automation)**
+The platform that runs my whole job hunt. Hourly workflows discover jobs, Claude scores each one against my profile, and it writes tailored resumes/cover letters — generated on my own laptop by a headless Claude Code agent reached over a Cloudflare Tunnel, at $0 API cost. Serverless on Cloudflare Workers + D1 + R2 behind Zero Trust, fully Terraform.
+`Cloudflare (Workers, D1, R2, Zero Trust, Tunnel) · TypeScript · Terraform · Python · Claude API`
+
+**[Browser Render Service](https://github.com/VanshBhardwaj1945/browser-render)**
+A small, security-dense AWS service that fetches JavaScript-rendered pages. A URL fetcher is a textbook SSRF target, so the whole design is built around that threat — CIDR blocklists, pre-flight DNS resolution, and per-request interception keep attacker-supplied URLs away from private and cloud-metadata addresses. SSRF guard fails closed, threat blocklist fails open. Zero static AWS keys (GitHub OIDC), fully Terraform, scale-to-zero.
+`AWS Lambda · puppeteer-core · Terraform · GitHub OIDC · S3`
+
+**[Click Arena — DevSecOps Pipeline](https://github.com/VanshBhardwaj1945/Click-Arena-DevSecOps)**
+A real-time multiplayer game I built as a vehicle for a full DevSecOps pipeline on Azure. Jenkins runs secret scanning, SAST, dependency scanning, container scanning, and post-deploy checks on every push — nothing ships without passing all of it.
+`Python · Flask · Jenkins · Terraform · Ansible · SonarQube · Snyk · Trivy · Gitleaks · Azure · Grafana`
+
+**[Cloud Resume Challenge — Azure](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)**
+A serverless resume site on Azure with a Python visitor-counter API, Cosmos DB, Front Door CDN, and full CI/CD. Infra fully defined as Terraform with test-gated deploys.
+`Azure (Functions, Cosmos DB, Front Door) · Terraform · GitHub Actions · Python`
 
 ---
 
 ## Labs
 
-| Lab | Status | What I Did | Technologies |
-|---|---|---|---|
-| **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)** | Complete | Six-phase hardening of a live production site — custom WAF rules blocking SQLi/XSS/path traversal, Zero Trust access on protected routes, HTTP security headers via a Worker, bot protection, and rate limiting on the API endpoint. Everything managed as Terraform IaC against real traffic | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), Terraform, JavaScript |
-| **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)** | In Progress | Hands-on AZ-104 labs covering RBAC and Management Groups, Azure Policy enforcement, VNet peering and custom routing, VM and VMSS management, and IaC with ARM Templates and Bicep | Azure, Entra ID, Azure Policy, Bicep, ARM Templates, PowerShell, Azure CLI |
-| **[Network Segmentation & Slowloris DoS Lab](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)** | Complete | Two-part VirtualBox sandbox: built a multi-subnet network segmented by a pfSense firewall and validated an access-control matrix with Nmap and Wireshark, then ran a controlled Slowloris application-layer DoS against Apache inside it and detected the attack with Splunk | VirtualBox, pfSense, iptables, Splunk, Nmap, Wireshark, Kali, Apache |
+**[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)**
+Six-phase hardening of a live production site — custom WAF rules blocking SQLi/XSS/path traversal, Zero Trust on protected routes, security headers via a Worker, bot protection, and API rate limiting. All Terraform, against real traffic.
+`Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield) · Terraform`
+
+**[Network Segmentation & Slowloris DoS Lab](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)**
+A two-part VirtualBox sandbox: built a multi-subnet network segmented by a pfSense firewall and validated an access-control matrix with Nmap and Wireshark, then ran a controlled Slowloris DoS against Apache inside it and detected it with Splunk.
+`VirtualBox · pfSense · iptables · Splunk · Nmap · Wireshark · Kali`
+
+**[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)**
+Hands-on labs covering RBAC and Management Groups, Azure Policy, VNet peering and custom routing, VMs/VMSS, and IaC with ARM Templates and Bicep.
+`Azure · Entra ID · Azure Policy · Bicep · ARM · PowerShell`
 
 ---
 
 ## Tech Stack
 
-| Domain | Technologies |
+| Domain | Tools |
 |---|---|
-| **Programming & Scripting** | Python, PowerShell/Bash, JavaScript, C++, Java |
-| **Cloud Platform** | Microsoft Azure (Portal, Storage, Front Door, Functions, Cosmos DB, Container Registry, Container Apps, Log Analytics) |
-| **Identity & Governance** | Microsoft Entra ID, RBAC, Azure Policy, Management Groups, Service Principals, Cloudflare Zero Trust (Access, service tokens, Tunnel) |
-| **Compute & Networking** | Azure VMs, VM Scale Sets, Load Balancer, NSG, VNet Peering, Network Watcher, Route Tables |
-| **Infrastructure as Code** | Terraform, ARM Templates (JSON), Bicep |
-| **Containers** | Docker, Azure Container Registry, Azure Container Apps |
-| **CI/CD** | Jenkins, GitHub Actions, Azure CLI, Azure PowerShell |
-| **Configuration Management** | Ansible |
-| **Secret Detection** | Gitleaks (CI pipeline + pre-commit hooks) |
-| **SAST** | SonarQube, Semgrep, Bandit |
-| **Dependency Scanning** | Snyk |
-| **Container Security** | Trivy |
-| **Edge & Web Security** | Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield), HTTP Security Headers |
-| **Observability** | Grafana, Azure Monitor, Azure Log Analytics |
-| **Detection & SIEM** | Splunk |
-| **Network Analysis & Recon** | Wireshark, tcpdump, Nmap, Zenmap |
-| **Firewall & Segmentation** | pfSense, iptables, WAF, NSG |
-| **Virtualization & Imaging** | VirtualBox, VMware, Windows Sysprep |
-| **Operating Systems** | Linux (Ubuntu/Kali), Windows Server, Windows, Mac OS |
-| **Frontend & Testing** | HTML, CSS, pytest, ruff, mypy |
-| **Security Tooling** | Custom rule engines, MITRE ATT&CK mapping, OWASP CICD Top 10, PyYAML, abstract base classes |
-| **AI Integration** | Anthropic Claude API (prompt caching, Message Batches), headless Claude Code agents, MCP servers, prompt engineering, LLM spend guardrails & usage telemetry |
-| **Package Publishing** | PyPI, hatch, pyproject.toml, trusted publishers, GitHub Actions CI/CD release automation |
-| **Security Frameworks** | OWASP Top 10, OWASP CICD Top 10, MITRE ATT&CK, SLSA |
+| **Languages** | Python, TypeScript/JavaScript, SQL, Bash/PowerShell, C++, Java |
+| **Security Engineering** | IAM (Entra ID, OAuth/OIDC, SCIM), SIEM (Splunk), EDR/IDS, OWASP Top 10, MITRE ATT&CK, XSS/SSRF remediation, vuln scanning (Snyk, Trivy, Gitleaks, Bandit, FlowSec) |
+| **Cloud & Infra** | AWS (Lambda, S3, IAM), Azure (Functions, Cosmos DB, Log Analytics), Cloudflare (Workers, Zero Trust, Tunnel), Docker, Kubernetes |
+| **IaC & CI/CD** | Terraform, ARM/Bicep, GitHub Actions, GitLab CI, Jenkins, Ansible, OPA/Rego policy-as-code |
+| **Detection & Networking** | pfSense/iptables, Wireshark, tcpdump, Nmap, detection playbooks, DISA STIGs, CIS benchmarks |
+| **AI Integration** | Anthropic Claude API, headless Claude Code agents, MCP servers, prompt caching, spend guardrails & telemetry |
+| **Observability** | Grafana, Azure Monitor/Log Analytics (KQL), Splunk |
 
 ---
 
 ## Experience
 
-- **Security Engineer Co-op — MISO (Midcontinent Independent System Operator)** | Upcoming - Fall 2026
+**Security Engineer Co-op — MISO (Midcontinent Independent System Operator)** · Aug – Dec 2026
+Defending the bulk electric grid serving 45 million customers in a NERC CIP environment — SIEM/EDR/IDS monitoring and triage, hardening Windows and Linux against DISA STIGs and CIS benchmarks, and automating security workflows in Python and PowerShell.
 
-  Will help defend the bulk electric grid serving 45 million customers across 15 US states — designing and implementing technical security controls and reference architectures for critical infrastructure, working hands-on with enterprise defense tooling (SIEM, IDS, EDR, NDR), and automating security workflows in Python and PowerShell across Azure and AWS.
+**Security Engineer Intern — Cloudflare** · Jun – Aug 2026
+Enterprise Identity & Access Management (EIAM) team. Built access-review and deprovisioning tooling, wrote access policy as code, and shipped an AI feature kept structurally barred from making destructive decisions.
 
-- **Security Engineer Intern — Cloudflare** | In Progress - Summer 2026
-
-  Working on the Enterprise Identity and Access Management (EIAM) team. Automating internal employee access provisioning and deprovisioning across   enterprise software, ensuring the right people have the right access at the right time with no manual intervention.
-
-- **Software Engineer Intern — Pitney Bowes** | Summer 2024
-
-  Worked on cloud development and testing on Microsoft Azure. Helped build and validate APIs and backend services, participated in Agile ceremonies and code reviews, and documented test procedures to keep things reproducible.
+**Software Engineer Intern — Pitney Bowes** · Jun – Jul 2024
+Cloud & DevOps rotation on Azure. Built and validated APIs and backend services, deployed Docker to Kubernetes, and worked in Agile with code reviews.
 
 ---
 
 ## Certifications
 
-- Microsoft Certified: Azure Administrator (AZ-104) — *In Progress*
-- Microsoft Certified: Azure Fundamentals (AZ-900)
-- CompTIA Security+ (SY0-701)
-- Google Cybersecurity Professional Certificate
+CompTIA Security+ (SY0-701) &nbsp;·&nbsp; Microsoft Azure Fundamentals (AZ-900) &nbsp;·&nbsp; Google Cybersecurity Professional Certificate
 
 ---
 
 ## Education
 
-**B.S. Computer Science — Cybersecurity Concentration**  
-Minor in Business Administration  
-Texas State University | Expected May 2027
+**B.S. Computer Science — Cybersecurity Concentration** · Minor in Business Administration
+Texas State University · Expected December 2027
