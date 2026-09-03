@@ -11,7 +11,7 @@ Security engineer who builds. Cloudflare Enterprise IAM last summer, security co
 </p>
 
 
-> **Currently:** defending the power grid at MISO by day, sharpening for Summer 2027 security-engineering internships by night. Building a self-hosted AI platform (RAG + local models) on the side.
+> **Currently:** defending the power grid at MISO by day, sharpening for Summer 2027 security-engineering internships by night.
 
 
 ---
