@@ -14,6 +14,8 @@ Security engineer who builds. Cloudflare Enterprise IAM last summer, security co
 
 
 > **Currently:** defending the power grid at MISO by day, sharpening for Summer 2027 security-engineering internships by night.
+>
+> **Exploring right now:** eBPF and runtime security, AI-agent identity and security, and detection engineering.
 
 
 ---
