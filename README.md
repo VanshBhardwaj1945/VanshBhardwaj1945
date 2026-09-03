@@ -4,6 +4,8 @@
 
 Security engineer who builds. Cloudflare Enterprise IAM last summer, security co-op at MISO (the power grid) right now, and a pile of security tools, cloud projects, and AI agents I've shipped in between. I like taking things apart, figuring out how they break, and putting them back together harder to break.
 
+**What I build:** security tooling & detection · identity/access platforms · cloud & CI/CD security.
+
 <p align="left">
   <a href="https://pypi.org/project/flowsec/"><img src="https://img.shields.io/pypi/v/flowsec?label=flowsec%20on%20PyPI&color=2f7d5b" alt="flowsec on PyPI" /></a>
   <img src="https://img.shields.io/badge/Security%2B-SY0--701-b7791f" alt="Security+" />
