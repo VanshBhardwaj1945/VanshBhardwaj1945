@@ -27,23 +27,23 @@ An AI assistant for MISO's public grid data, built for the **Fall 2026 MISO Xter
 `React · FastAPI · Claude · LlamaIndex · Chroma`
 
 **[FlowSec — CI/CD Pipeline Security Scanner](https://github.com/VanshBhardwaj1945/FlowSec)** &nbsp;·&nbsp; `pip install flowsec`
-A published Python tool that scans GitHub Actions, GitLab CI, and Azure DevOps pipelines for attack vectors. 25+ rules mapped to MITRE ATT&CK and the OWASP CI/CD Top 10, AI-generated attack narratives, a `--fail-on` flag that blocks risky PRs, and SARIF export straight into GitHub's Security tab.
+Most teams scan their code but never scan the pipelines that build it. FlowSec fills that gap: a published Python tool that scans GitHub Actions, GitLab CI, and Azure DevOps pipelines for risky configuration. 25+ rules, each mapped to MITRE ATT&CK and the OWASP CI/CD Top 10, a `--fail-on` flag that blocks risky builds, and findings that land straight in GitHub's Security tab.
 `Python · PyGithub · Anthropic Claude API · SARIF · Docker · PyPI`
 
 **[Job Tracker Automation](https://github.com/VanshBhardwaj1945/Job-Tracker-Automation)**
-The platform that runs my whole job hunt. Hourly workflows discover jobs, Claude scores each one against my profile, and it writes tailored resumes/cover letters — generated on my own laptop by a headless Claude Code agent reached over a Cloudflare Tunnel, at $0 API cost. Serverless on Cloudflare Workers + D1 + R2 behind Zero Trust, fully Terraform.
+The platform that runs my whole job hunt for me. Every hour it finds new roles, Claude scores each one against my profile, and it writes tailored resumes and cover letters. The writing happens on my own laptop through a Cloudflare Tunnel, so it costs $0 in API fees. Serverless on Cloudflare Workers behind Zero Trust login, with everything defined in Terraform.
 `Cloudflare (Workers, D1, R2, Zero Trust, Tunnel) · TypeScript · Terraform · Python · Claude API`
 
 **[Browser Render Service](https://github.com/VanshBhardwaj1945/browser-render)**
-A small, security-dense AWS service that fetches JavaScript-rendered pages. A URL fetcher is a textbook SSRF target, so the whole design is built around that threat — CIDR blocklists, pre-flight DNS resolution, and per-request interception keep attacker-supplied URLs away from private and cloud-metadata addresses. SSRF guard fails closed, threat blocklist fails open. Zero static AWS keys (GitHub OIDC), fully Terraform, scale-to-zero.
+A small AWS service that fetches pages that need a real browser to render. A URL fetcher is a textbook target for server-side request forgery, so the whole design is built around that threat: it checks where every URL really points before fetching, and blocks anything aimed at private or cloud-internal addresses. The safety guard fails closed. No static AWS keys, fully Terraform, and it scales to zero when idle.
 `AWS Lambda · puppeteer-core · Terraform · GitHub OIDC · S3`
 
 **[Click Arena — DevSecOps Pipeline](https://github.com/VanshBhardwaj1945/Click-Arena-DevSecOps)**
-A real-time multiplayer game I built as a vehicle for a full DevSecOps pipeline on Azure. Jenkins runs secret scanning, SAST, dependency scanning, container scanning, and post-deploy checks on every push — nothing ships without passing all of it.
+A real-time multiplayer game I built as an excuse to build the pipeline around it. On every push, Jenkins runs secret scanning, static analysis, dependency and container scanning, and post-deploy checks. If any of them fail, nothing ships.
 `Python · Flask · Jenkins · Terraform · Ansible · SonarQube · Snyk · Trivy · Gitleaks · Azure · Grafana`
 
 **[Cloud Resume Challenge — Azure](https://github.com/VanshBhardwaj1945/cloud-resume-challenge-azure)**
-A serverless resume site on Azure with a Python visitor-counter API, Cosmos DB, Front Door CDN, and full CI/CD. Infra fully defined as Terraform with test-gated deploys.
+A serverless resume site on Azure with a Python visitor-counter API, a database, a CDN, and full CI/CD. All the infrastructure is defined in Terraform, and failing tests block the deploy.
 `Azure (Functions, Cosmos DB, Front Door) · Terraform · GitHub Actions · Python`
 
 ---
@@ -51,15 +51,15 @@ A serverless resume site on Azure with a Python visitor-counter API, Cosmos DB, 
 ## Labs
 
 **[Cloudflare Security Hardening](https://github.com/VanshBhardwaj1945/cloudflare-security-hardening)**
-Six-phase hardening of a live production site — custom WAF rules blocking SQLi/XSS/path traversal, Zero Trust on protected routes, security headers via a Worker, bot protection, and API rate limiting. All Terraform, against real traffic.
+A six-phase hardening of my own live site, driven by the real traffic hitting it. Custom firewall rules blocking injection and scanner traffic, Zero Trust login on protected pages, security headers injected at the edge, bot protection, and API rate limiting. All defined in Terraform, all against real traffic.
 `Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield) · Terraform`
 
 **[Network Segmentation & Slowloris DoS Lab](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)**
-A two-part VirtualBox sandbox: built a multi-subnet network segmented by a pfSense firewall and validated an access-control matrix with Nmap and Wireshark, then ran a controlled Slowloris DoS against Apache inside it and detected it with Splunk.
+A sandbox network I built from scratch, then attacked. First I segmented it with a pfSense firewall and proved the traffic rules held using Nmap and Wireshark. Then I ran a controlled Slowloris denial-of-service attack against a web server inside it and caught the attack with Splunk.
 `VirtualBox · pfSense · iptables · Splunk · Nmap · Wireshark · Kali`
 
 **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)**
-Hands-on labs covering RBAC and Management Groups, Azure Policy, VNet peering and custom routing, VMs/VMSS, and IaC with ARM Templates and Bicep.
+Hands-on Azure administration labs: who-can-do-what (RBAC and management groups), guardrail policies, virtual networking and routing, VMs at scale, and everything written as code with ARM templates and Bicep.
 `Azure · Entra ID · Azure Policy · Bicep · ARM · PowerShell`
 
 ---
@@ -81,13 +81,13 @@ Hands-on labs covering RBAC and Management Groups, Azure Policy, VNet peering an
 ## Experience
 
 **Security Engineer Co-op — MISO (Midcontinent Independent System Operator)** · Aug – Dec 2026
-Defending the bulk electric grid serving 45 million customers in a NERC CIP environment — SIEM/EDR/IDS monitoring and triage, hardening Windows and Linux against DISA STIGs and CIS benchmarks, and automating security workflows in Python and PowerShell.
+Helping defend the electrical grid that serves 45 million people. Day to day that means monitoring and triaging security alerts, hardening Windows and Linux systems against military-grade baselines, and automating the repetitive parts in Python and PowerShell.
 
 **Security Engineer Intern — Cloudflare** · Jun – Aug 2026
-Enterprise Identity & Access Management (EIAM) team. Built access-review and deprovisioning tooling, wrote access policy as code, and shipped an AI feature kept structurally barred from making destructive decisions.
+On the Enterprise Identity & Access Management team. Built tooling that finds and safely removes access nobody uses anymore, shipped an access-review platform, wrote access policy as code, and built an AI feature deliberately designed so it can never make a destructive decision on its own.
 
 **Software Engineer Intern — Pitney Bowes** · Jun – Jul 2024
-Cloud & DevOps rotation on Azure. Built and validated APIs and backend services, deployed Docker to Kubernetes, and worked in Agile with code reviews.
+A cloud and DevOps rotation on Azure. Built and tested APIs and backend services, deployed containers to Kubernetes, and shipped an AI chatbot with a team of interns.
 
 ---
 
