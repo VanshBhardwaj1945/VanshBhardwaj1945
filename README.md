@@ -30,6 +30,10 @@ A published Python tool that scans GitHub Actions, GitLab CI, and Azure DevOps p
 The platform that runs my whole job hunt. Hourly workflows discover jobs, Claude scores each one against my profile, and it writes tailored resumes/cover letters — generated on my own laptop by a headless Claude Code agent reached over a Cloudflare Tunnel, at $0 API cost. Serverless on Cloudflare Workers + D1 + R2 behind Zero Trust, fully Terraform.
 `Cloudflare (Workers, D1, R2, Zero Trust, Tunnel) · TypeScript · Terraform · Python · Claude API`
 
+**[MISO Copilot](https://github.com/VanshBhardwaj1945/miso-copilot)** &nbsp;·&nbsp; ◐ in progress
+An AI assistant over MISO's public grid data, built for the Fall 2026 MISO Xtern Challenge. Ask in plain English, get a sourced, timestamped answer in seconds. Pull-based RAG by design: a rate-guarded poller keeps a local snapshot of MISO's public APIs, so questions never touch the live API and every answer says how fresh its data is. 627 poller tests at 100% branch coverage, security CI, React widget with a Streamlit backup, and a validated Terraform sketch (AKS, WAF edge, Redis, SIEM forwarding) as the designed next step.
+`React · FastAPI · Claude · LlamaIndex · Chroma · sentence-transformers`
+
 **[Browser Render Service](https://github.com/VanshBhardwaj1945/browser-render)**
 A small, security-dense AWS service that fetches JavaScript-rendered pages. A URL fetcher is a textbook SSRF target, so the whole design is built around that threat — CIDR blocklists, pre-flight DNS resolution, and per-request interception keep attacker-supplied URLs away from private and cloud-metadata addresses. SSRF guard fails closed, threat blocklist fails open. Zero static AWS keys (GitHub OIDC), fully Terraform, scale-to-zero.
 `AWS Lambda · puppeteer-core · Terraform · GitHub OIDC · S3`
