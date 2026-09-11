@@ -22,8 +22,8 @@ Security engineer who builds. Cloudflare Enterprise IAM last summer, security co
 
 ## Projects
 
-**[MISO Copilot](https://github.com/VanshBhardwaj1945/miso-copilot)** &nbsp;·&nbsp; ◐ in progress
-An AI assistant for MISO's public grid data, built for the **Fall 2026 MISO Xtern hackathon challenge**. Ask a question in plain English, get an answer in seconds with a source link and a timestamp. The design rule that shaped everything: it never calls MISO's API while answering — a background job keeps a fresh local copy (capped at MISO's published rate limit), so the app keeps working even if the API goes down. 627 poller tests at 100% branch coverage, security CI, React demo UI with a Streamlit backup, and a Terraform cloud deployment already sketched.
+**[MISO Ramen](https://github.com/VanshBhardwaj1945/miso-copilot)** &nbsp;·&nbsp; ★ 3rd place, Fall 2026 MISO Xtern Challenge
+An AI assistant for MISO's public grid data — ask a question in plain English, get an answer in seconds with a source link and a timestamp. Our team of four took **3rd place**; I was the security + cloud engineer, and I architected the production design: firewall and load balancer in front of a small Kubernetes cluster where every component runs as a pod, with the LLM swappable so MISO could run an internal model. The design rule that shaped everything: it never calls MISO's API while answering — a background job keeps a fresh local copy (capped at MISO's published rate limit), so the app keeps working even if the API goes down. 627 poller tests at 100% branch coverage, security CI, and next up an MCP layer so other people's AI tools can use the data too.
 `React · FastAPI · Claude · LlamaIndex · Chroma`
 
 **[FlowSec — CI/CD Pipeline Security Scanner](https://github.com/VanshBhardwaj1945/FlowSec)** &nbsp;·&nbsp; `pip install flowsec`
