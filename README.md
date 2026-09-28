@@ -22,17 +22,21 @@ Security engineer who builds. Cloudflare Enterprise IAM last summer, security co
 
 ## Projects
 
-**[MISO Ramen](https://github.com/VanshBhardwaj1945/miso-copilot)** &nbsp;·&nbsp; ★ 3rd place, Fall 2026 MISO Xtern Challenge
-An AI assistant for MISO's public grid data — ask a question in plain English, get an answer in seconds with a source link and a timestamp. Our team of four took **3rd place**; I was the security + cloud engineer, and I architected the production design: firewall and load balancer in front of a small Kubernetes cluster where every component runs as a pod, with the LLM swappable so MISO could run an internal model. The design rule that shaped everything: it never calls MISO's API while answering — a background job keeps a fresh local copy (capped at MISO's published rate limit), so the app keeps working even if the API goes down. 627 poller tests at 100% branch coverage, security CI, and next up an MCP layer so other people's AI tools can use the data too.
-`React · FastAPI · Claude · LlamaIndex · Chroma`
+**[This website — vanshbhardwaj.com](https://vanshbhardwaj.com)** &nbsp;·&nbsp; hardening in progress
+I run my own portfolio like production. Every request passes custom Cloudflare WAF rules and a rate limit, the page runs under a content security policy that pins its one script by hash, and DNSSEC and CAA lock down DNS and certificates. The AI chatbot (Snoopy) is grounded in a vectorized DB and can only be reached through an edge Worker whose secret the backend requires, using its own token that is limited to public search. The contact form checks for a human first, enforces per-IP quotas, and inspects every upload's real file type for macros and hidden scripts before quarantining it. Every push runs a security gate (secret scan, tests, dependency audit, FlowSec on its own pipeline), deploys, then attacks the live site to prove the protections held.
+`Cloudflare (WAF, Workers, Turnstile, R2, KV, Vectorize, Workers AI, Access) · Azure (Static Web Apps, Functions) · Claude · Terraform · GitHub Actions OIDC`
 
 **[FlowSec — CI/CD Pipeline Security Scanner](https://github.com/VanshBhardwaj1945/FlowSec)** &nbsp;·&nbsp; `pip install flowsec`
-Most teams scan their code but never scan the pipelines that build it. FlowSec fills that gap: a published Python tool that scans GitHub Actions, GitLab CI, and Azure DevOps pipelines for risky configuration. 25+ rules, each mapped to MITRE ATT&CK and the OWASP CI/CD Top 10, a `--fail-on` flag that blocks risky builds, and findings that land straight in GitHub's Security tab.
+Most teams scan their code but never scan the pipelines that build it. FlowSec fills that gap: a published Python tool that scans GitHub Actions, GitLab CI, and Azure DevOps pipelines for risky configuration. 38 rules, each mapped to MITRE ATT&CK and the OWASP CI/CD Top 10, a `--fail-on` flag that blocks risky builds, and findings that land straight in GitHub's Security tab.
 `Python · PyGithub · Anthropic Claude API · SARIF · Docker · PyPI`
 
 **[Job Tracker Automation](https://github.com/VanshBhardwaj1945/Job-Tracker-Automation)**
 The platform that runs my whole job hunt for me. Every hour it finds new roles, Claude scores each one against my profile, and it writes tailored resumes and cover letters. The writing happens on my own laptop through a Cloudflare Tunnel, so it costs $0 in API fees. Serverless on Cloudflare Workers behind Zero Trust login, with everything defined in Terraform.
 `Cloudflare (Workers, D1, R2, Zero Trust, Tunnel) · TypeScript · Terraform · Python · Claude API`
+
+**[MISO Ramen](https://github.com/VanshBhardwaj1945/miso-copilot)** &nbsp;·&nbsp; ★ 3rd place, Fall 2026 MISO Xtern Challenge
+An AI assistant for MISO's public grid data — ask a question in plain English, get an answer in seconds with a source link and a timestamp. Our team of four took **3rd place**; I was the security + cloud engineer, and I designed (not deployed) the production setup: firewall and load balancer in front of a small Kubernetes cluster where every component runs as a pod, with the LLM swappable so MISO could run an internal model. The design rule that shaped everything: it never calls MISO's API while answering — a background job keeps a fresh local copy (capped at MISO's published rate limit), so the app keeps working even if the API goes down. Security checks run in CI, and my rate limiter ignores spoofed forwarding headers.
+`React · FastAPI · Claude · LlamaIndex · Chroma`
 
 **[Browser Render Service](https://github.com/VanshBhardwaj1945/browser-render)**
 A small AWS service that fetches pages that need a real browser to render. A URL fetcher is a textbook target for server-side request forgery, so the whole design is built around that threat: it checks where every URL really points before fetching, and blocks anything aimed at private or cloud-internal addresses. The safety guard fails closed. No static AWS keys, fully Terraform, and it scales to zero when idle.
@@ -55,7 +59,7 @@ A six-phase hardening of my own live site, driven by the real traffic hitting it
 `Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield) · Terraform`
 
 **[Network Segmentation & Slowloris DoS Lab](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)**
-A sandbox network I built from scratch, then attacked. First I segmented it with a pfSense firewall and proved the traffic rules held using Nmap and Wireshark. Then I ran a controlled Slowloris denial-of-service attack against a web server inside it and caught the attack with Splunk.
+A sandbox network I built from scratch, then attacked. First I segmented it with a pfSense firewall and proved the traffic rules held using Nmap and Wireshark. Then I ran a controlled Slowloris denial-of-service attack against a web server inside it and caught it in Splunk, and showed that weak SSH passwords alone let an attacker in, using Metasploit with common username and password lists.
 `VirtualBox · pfSense · iptables · Splunk · Nmap · Wireshark · Kali`
 
 **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)**
@@ -69,7 +73,7 @@ Hands-on Azure administration labs: who-can-do-what (RBAC and management groups)
 | Domain | Tools |
 |---|---|
 | **Languages** | Python, TypeScript/JavaScript, SQL, Bash/PowerShell, C++, Java |
-| **Security Engineering** | IAM (Entra ID, OAuth/OIDC, SCIM), SIEM (Splunk), EDR/IDS, OWASP Top 10, MITRE ATT&CK, XSS/SSRF remediation, vuln scanning (Snyk, Trivy, Gitleaks, Bandit, FlowSec) |
+| **Security Engineering** | IAM (Entra ID, OAuth/OIDC, SCIM), SIEM (Splunk), EDR, OWASP Top 10, MITRE ATT&CK, XSS/SSRF remediation, vuln scanning (Snyk, Trivy, Gitleaks, Bandit, FlowSec) |
 | **Cloud & Infra** | AWS (Lambda, S3, IAM), Azure (Functions, Cosmos DB, Log Analytics), Cloudflare (Workers, Zero Trust, Tunnel), Docker, Kubernetes |
 | **IaC & CI/CD** | Terraform, ARM/Bicep, GitHub Actions, GitLab CI, Jenkins, Ansible, OPA/Rego policy-as-code |
 | **Detection & Networking** | pfSense/iptables, Wireshark, tcpdump, Nmap, detection playbooks, DISA STIGs, CIS benchmarks |
