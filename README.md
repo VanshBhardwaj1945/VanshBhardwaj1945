@@ -58,9 +58,9 @@ A serverless resume site on Azure with a Python visitor-counter API, a database,
 A six-phase hardening of my own live site, driven by the real traffic hitting it. Custom firewall rules blocking injection and scanner traffic, Zero Trust login on protected pages, security headers injected at the edge, bot protection, and API rate limiting. All defined in Terraform, all against real traffic.
 `Cloudflare (WAF, Access, Workers, Bot Protection, Page Shield) · Terraform`
 
-**[Network Segmentation & Slowloris DoS Lab](https://github.com/VanshBhardwaj1945/slowloris-dos-attack-lab-)**
-A sandbox network I built from scratch, then attacked. First I segmented it with a pfSense firewall and proved the traffic rules held using Nmap and Wireshark. Then I ran a controlled Slowloris denial-of-service attack against a web server inside it and caught it in Splunk, and showed that weak SSH passwords alone let an attacker in, using Metasploit with common username and password lists.
-`VirtualBox · pfSense · iptables · Splunk · Nmap · Wireshark · Kali`
+**[Systems & Network Security Lab](https://github.com/VanshBhardwaj1945/systems-network-security-lab)**
+A sandbox where I build defenses and then attack them, written up as separate tracks. I segmented a network with a pfSense firewall and proved the rules held with Nmap and Wireshark; ran a Slowloris DoS and caught it in Splunk where volume alerts miss it; cracked weak SSH passwords with Metasploit and a small C tool I wrote (libssh2); analyzed a stack buffer overflow in gdb with the ASLR math for why a return-address overwrite fails; and broke a weak home-grown cipher with a known-plaintext attack.
+`VirtualBox · pfSense · iptables · Splunk · Nmap · Wireshark · Kali · Metasploit · gdb · C (libssh2)`
 
 **[Azure Labs](https://github.com/VanshBhardwaj1945/azure-labs)**
 Hands-on Azure administration labs: who-can-do-what (RBAC and management groups), guardrail policies, virtual networking and routing, VMs at scale, and everything written as code with ARM templates and Bicep.
